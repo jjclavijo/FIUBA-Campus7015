@@ -1,0 +1,568 @@
+<div>
+    <script>
+        var sheet = document.createElement('style')
+        sheet.innerHTML = `
+    #cronograma tr {
+      }
+
+    #iteoria {
+      line-height: 1.7;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    #iteoria {
+      margin: 0 auto;
+      hyphens: auto;
+      word-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      #iteoria {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+    }
+    @media print {
+      #iteoria {
+        background-color: transparent;
+        color: black;
+      }
+      #iteoria p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      #iteoria h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    #iteoria p {
+      margin-top: 1.7em;
+    }
+    #iteoria a {
+      color: #1a1a1a;
+    }
+
+    #iteoria a.recurso {
+      border: dashed 1px gray;
+    }
+
+    #iteoria a.propio {
+      background: #d3a747;
+    }
+
+    #iteoria a.externo {
+      background: #74d347;
+    }
+
+    #iteoria a.video {
+      border: solid 1px #4774d3;
+    }
+
+    #iteoria a {
+      color: #1a1a1a;
+    }
+
+    #iteoria a:visited {
+      color: #1a1a1a;
+    }
+    #iteoria img {
+      max-width: 100%;
+    }
+    #iteoria h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.7em;
+    }
+    #iteoria ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1.7em;
+    }
+    #iteoria li > ol, li > ul {
+      margin-top: 0;
+    }
+    #iteoria blockquote {
+      margin: 1.7em 0 1.7em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      font-style: italic;
+    }
+    #iteoria hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin-top: 1.7em;
+    }
+    #iteoria table {
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+    }
+    #iteoria th, td {
+      border-bottom: 1px solid lightgray;
+      padding: 0.4em 0.7em 0.4em 0;
+    }
+    #iteoria header {
+      margin-bottom: 6em;
+      text-align: center;
+    }
+    #iteoria nav a:not(:hover) {
+      text-decoration: none;
+    }
+    #iteoria code{white-space: pre-wrap;}
+    #iteoria span.smallcaps{font-variant: small-caps;}
+    #iteoria span.underline{text-decoration: underline;}
+    #iteoria div.column{display: inline-block; vertical-align: top; width: 50%;}
+    #iteoria div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    #iteoria ul.task-list{list-style: none;}
+    #iteoria {
+    font-size: 1rem
+    }
+    #iteoria .tema {
+    font-size: 1.7rem;
+    border-top: dashed 1px;
+    border-bottom: solid 1px;
+    padding: 1em;
+    padding-bottom: 0.3em;
+    }
+    div.collapsible > input + * {
+     display: none;
+    }
+     
+    div.collapsible > input:checked + * {
+     display: block;
+    }
+
+    div.collapsible > input {
+     display: none;
+    }
+
+    .tema label {
+     cursor: pointer;
+     font-size: 1rem;
+     background: #dddddd;
+    }
+`;
+        document.body.appendChild(sheet);
+    </script>
+
+    <div id="iteoria">
+
+        <div class="tema"> Cartografía: Cronograma de la materia
+            <label for="mylist-node0">Abrir/Colapsar</label>
+        </div>
+        <div class="collapsible">
+            <input type="checkbox" id="mylist-node0">
+            <div class="tema-cuerpo">
+
+                <table id="cronograma">
+                    <colgroup width="76" span="2"></colgroup>
+                    <colgroup width="265" span="3"></colgroup>
+                    <tbody style="border:solid;">
+                        <tr>
+                            <td valign="middle" height="17" align="center">Fecha</td>
+                            <td valign="middle" align="center">Notas</td>
+                            <td valign="middle" align="center">Tema</td>
+                            <td valign="middle" align="center">Tareas</td>
+                            <td valign="middle" align="center">Entregas</td>
+                        </tr>
+                        <tr>
+                            <td valign="middle" height="38" align="center">9-29</td>
+                            <td sdval="0" sdnum="1033;" valign="middle" align="center">0</td>
+                            <td valign="middle" align="center">Introducción General / Coloquial Coordenadas</td>
+                            <td valign="middle" align="center">Ver video Introductorio y apuntes Echert - Notas - Tierra_carta</td>
+                            <td valign="middle" align="center"><br></td>
+                        </tr>
+                        <tr>
+                            <td valign="middle" height="38" align="center">10-6</td>
+                            <td sdval="5" sdnum="1033;" valign="middle" align="center">5</td>
+                            <td valign="middle" align="center">Bases Vectoriales (+ revision Introductoria) - Orientaciones Tps</td>
+                            <td valign="middle" align="center">Ver video Clase Vectores Base - Apunte Vectores Base y Métrica (v1)</td>
+                            <td valign="middle" align="center"><br></td>
+                        </tr>
+                        <tr>
+                            <td valign="middle" height="76" align="center">10-13</td>
+                            <td sdval="10" sdnum="1033;" valign="middle" align="center">10</td>
+                            <td valign="middle" align="center">Proyecciónes con figura auxiliar (Desarrollo de alguna) (se grabó la clase)</td>
+                            <td valign="middle" align="center">Ver video año anterior y este sobre desarrollo de proyecciones con figura auxiliar - Apuntes Varios + Ejemplo Q_auth</td>
+                            <td valign="middle" align="center">Entrega TP Introductorio</td>
+                        </tr>
+                        <tr>
+                            <td valign="middle" height="38" align="center">10-20</td>
+                            <td sdval="15" sdnum="1033;" valign="middle" align="center">15</td>
+                            <td valign="middle" align="center">Más desarrollo de Proyecciones / Métrica (se Grabó Kavrayski VII no se editó)</td>
+                            <td valign="middle" align="center">Ver video Metrica Repasar Apunte Vectores Base</td>
+                            <td valign="middle" align="center"><br></td>
+                        </tr>
+                        <tr>
+                            <td valign="middle" height="38" align="center">10-27</td>
+                            <td sdval="20" sdnum="1033;" valign="middle" align="center">20</td>
+                            <td valign="middle" align="center">Métrica - Autovalores Autovectores - Descomposición - Revisión avances</td>
+                            <td valign="middle" align="center">Apunte de transcripción del video de métrica</td>
+                            <td valign="middle" align="center"><br></td>
+                        </tr>
+                        <tr>
+                            <td valign="middle" height="38" align="center">11-3</td>
+                            <td sdval="25" sdnum="1033;" valign="middle" align="center">25</td>
+                            <td valign="middle" align="center">Marco de Referencia - C1 - Introducción</td>
+                            <td valign="middle" align="center">Ver videos Datum e Intro a Gis</td>
+                            <td valign="middle" align="center">Entrega TP Proyecciones</td>
+                        </tr>
+                        <tr>
+                            <td valign="middle" height="38" align="center">11-10</td>
+                            <td sdval="30" sdnum="1033;" valign="middle" align="center">30</td>
+                            <td valign="middle" align="center">Marco de Referencia - C2 - Sistema y Marco</td>
+                            <td valign="middle" align="center">Práctica Georreferenciación Medición de coordenadas.</td>
+                            <td valign="middle" align="center"><br></td>
+                        </tr>
+                        <tr>
+                            <td valign="middle" height="57" align="center">11-17</td>
+                            <td sdval="35" sdnum="1033;" valign="middle" align="center">35</td>
+                            <td valign="middle" align="center">Introducción Datos Geográficos y Carta Temática + Mínimo TP4</td>
+                            <td valign="middle" align="center">Revisión de Tutoriales y Software, Herramientas Dibujar Grillas y costas en distintas coordenadas</td>
+                            <td valign="middle" align="center">Entrega TP Datum</td>
+                        </tr>
+                        <tr>
+                            <td valign="middle" height="38" align="center">11-24</td>
+                            <td sdval="40" sdnum="1033;" valign="middle" align="center">40</td>
+                            <td valign="middle" align="center">Discusión TP 4 - Discusión Carta Temática </td>
+                            <td valign="middle" align="center"><br></td>
+                            <td valign="middle" align="center"><br></td>
+                        </tr>
+                        <tr>
+                            <td valign="middle" height="38" align="center">12-1</td>
+                            <td sdval="45" sdnum="1033;" valign="middle" align="center">45</td>
+                            <td valign="middle" align="center">Geometría del Elipsoide – Discusión Carta temática</td>
+                            <td valign="middle" align="center"><br></td>
+                            <td valign="middle" align="center">Entrega Borrador Temática (Obligatorio)</td>
+                        </tr>
+                        <tr>
+                            <td valign="middle" height="38" bgcolor="lightgray" align="center">12-8</td>
+                            <td sdval="50" sdnum="1033;" valign="middle" bgcolor="lightgray" align="center">50</td>
+                            <td valign="middle" bgcolor="lightgray" align="center"><br></td>
+                            <td valign="middle" bgcolor="lightgray" align="center"><br></td>
+                            <td valign="middle" bgcolor="lightgray" align="center">Entrega Borrador TP 4 (Como esté)</td>
+                        </tr>
+                        <tr>
+                            <td valign="middle" height="38" align="center">12-15</td>
+                            <td sdval="55" sdnum="1033;" valign="middle" align="center">55</td>
+                            <td valign="middle" align="center">Mercator y Estereográfica en el Elipsoide</td>
+                            <td valign="middle" align="center"><br></td>
+                            <td valign="middle" align="center">Entrega Definitiva TP 4</td>
+                        </tr>
+                        <tr>
+                            <td valign="middle" height="38" align="center"> 2-2</td>
+                            <td sdval="60" sdnum="1033;" valign="middle" align="center">60</td>
+                            <td valign="middle" align="center">Mas Cartografía Temática</td>
+                            <td valign="middle" align="center"><br></td>
+                            <td valign="middle" align="center"><br></td>
+                        </tr>
+                        <tr>
+                            <td valign="middle" height="38" align="center"> 2-9</td>
+                            <td sdval="65" sdnum="1033;" valign="middle" align="center">65</td>
+                            <td valign="middle" align="center">Gauss Krugger - Desarrollo y deformación</td>
+                            <td valign="middle" align="center"><br></td>
+                            <td valign="middle" align="center">Entrega Temática</td>
+                        </tr>
+                        <tr>
+                            <td valign="middle" height="38" bgcolor="lightgray" align="center">2-16</td>
+                            <td sdval="70" sdnum="1033;" valign="middle" bgcolor="lightgray" align="center">70</td>
+                            <td valign="bottom" bgcolor="lightgray" align="left"><br></td>
+                            <td valign="middle" bgcolor="lightgray" align="center"><br></td>
+                            <td valign="middle" bgcolor="lightgray" align="center">Entrega Elipsoide</td>
+                        </tr>
+                        <tr>
+                            <td valign="middle" height="38" align="center"> 2-23</td>
+                            <td sdval="75" sdnum="1033;" valign="middle" align="center">75</td>
+                            <td valign="middle" align="center">Gauss Krugger - Casos de Uso y Ejemplos</td>
+                            <td valign="middle" align="center"><br></td>
+                            <td valign="middle" align="center">Entregas y Correcciones Finales / Cierre.</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+
+        <div class="tema">#1: Cartografía Matemática, introducción
+            <label for="mylist-node1">Abrir/Colapsar</label>
+        </div>
+        <div class="collapsible">
+            <input type="checkbox" id="mylist-node1">
+            <div class="tema-cuerpo">
+
+                <p>El material de la primera clase es variado.</p>
+
+                <p>En primer lugar está el video <a class="recurso propio" href="https://campus.fi.uba.ar/mod/url/view.php?id=189752">Tema 1 - Parametros Coordenadas y Escala</a>, que desarrolla la idea de paramertización del espacio como base para la representación.
+                    En suma, plantea la cartografía matemática como la creación de parametrizaciones de los espacios reográfico y de representación --papel--, construyendo sistemas de coordenadas nuevos en cada uno , para luego aplicar estos sistemas
+                    entre sí.</p>
+
+                <p> En segundo lugar, el material escrito es:</p>
+
+                <ol>
+                    <li>- Apunte <a class="recurso propio" href="https://campus.fi.uba.ar/mod/resource/view.php?id=189788">Tema1_TierrayCarta</a>, que hace una introducción resaltando cual es el principal problema de la carta, es decir, que la tierra no es
+                        desarrollable sobre el plano.</li>
+                    <li>- Apunte <a class="recurso propio" href="https://campus.fi.uba.ar/mod/resource/view.php?id=189787">Tema1_Notas</a>, que es un apoyo a lo expuesto en el video, y incluye unos ejercicios finales que son sólo sugerencias para fijar los
+                        contenidos.
+                    </li>
+                    <li>- Apunte <a class="recurso externo" href="https://campus.fi.uba.ar/mod/resource/view.php?id=189789">Tema1_EckertIntro</a>, que es tomado de un libro que trata el tema de la grilla de meridianos y paralelos que se genera para una carta
+                        en forma simple, y sirve para presentar algunos ejemplos y gráficos útiles.</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="tema">#2: Formalización Matemática: Vectore Base y Sistemas de Coordenadas
+            <label for="mylist-node2">Abrir/Colapsar</label>
+        </div>
+        <div class="collapsible">
+            <input type="checkbox" id="mylist-node2">
+            <div class="tema-cuerpo">
+                <p>El material de la segunda clase profundiza lo visto en la primera.</p>
+
+                <p>En esta clase formalizaremos la notación a utilizar en el resto de la materia, y es de suma importancia aplicarlo en la realización de los ejercicios.</p>
+
+                <p>El material consta de:</p>
+
+                <ol>
+                    <li> un video: <a class="recurso propio video" href="https://campus.fi.uba.ar/mod/url/view.php?id=189753">Tema 2 - Lineas coordenadas y Bases Vectoriales</a></li>
+                    <li> un apunte escrito: <a class="recurso propio" href="https://campus.fi.uba.ar/mod/resource/view.php?id=189791">Tema2 Vectores Base y Métrica</a></li>
+                </ol>
+
+            </div>
+        </div>
+
+        <div class="tema"> #3: Desarrollo de Proyecciónes
+            <label for="mylist-node3">Abrir/Colapsar</label>
+        </div>
+        <div class="collapsible">
+            <input type="checkbox" id="mylist-node3">
+            <div class="tema-cuerpo">
+                <p>En las clases anteriores se sentaron las bases para el desarrollo y análisis de representaciónes cartográficas cómo transformaciónes matemáticas. </p>
+                <p>Utilizando estas herramientas, proponemos realizar dos actividades. Por un lado leer y analizar materiales de diversas fuentes y entender cómo se expresan las metodologías aplicadas en cada caso utilizando el lenguaje matemático desarrollado.</p>
+                <p>Por otro lado, proponemos concentrarse en extraer y formalizar las condiciones que caracterizan a cada sistema de representación, de manera que podamos realizar un desarrollo ordenado para las mismas, partiendo de condiciones y llegando
+                    a expresiones. Este segundo punto es el objeto de la <a class="actividad" href="https://campus.fi.uba.ar/course/view.php?id=1093&amp;section=14">Actividad 2</a></p>
+
+
+                <p>El material propio del curso para esta sección consiste en dos videos, donde el enfoque está centrado en las llamadas <b>proyecciones con figura auxiliar</b></p>
+
+                <ul>
+                    <li>- <a class="recurso propio video" href="https://campus.fi.uba.ar/mod/url/view.php?id=195500">Video 2020 1er Cuatrimestre</a></li>
+                    <li>- <a class="recurso propio video" href="https://campus.fi.uba.ar/mod/url/view.php?id=196122">Video 2020 2do Cuatrimestre</a></li>
+                </ul>
+
+                <p> Y dos lecturas cortas: </p>
+
+                <ul>
+                    <li> <a class="recurso propio" href="https://campus.fi.uba.ar/mod/resource/view.php?id=194205">Ejemplo de desarrollo de una proyección</a> </li>
+                    <li> <a class="recurso propio" href="https://campus.fi.uba.ar/pluginfile.php/355128/mod_resource/content/1/disparadores.html">Disparadores para el trahajo con proyecciones</a></li>
+                </ul>
+
+                <p>El material de fuentes externas, con desarrollos diversos, consta de tres apuntes, cada uno con su estilo, todos son interesantes de analizar.</p>
+                <p>
+
+                </p>
+                <ul>
+                    <li>El apunte <a class="recurso externo" href="https://campus.fi.uba.ar/mod/resource/view.php?id=189793">Tema3_Starobinsky_RepresentacionesCartográficas</a>, del Ing. Miguel Starobinsky, donde la sección relevante son las páginas 37-97
+                        (desarrollo de proyecciones en la esfera).</li>
+                    <li>El apunte de proyecciones cartográficas <a class="recurso externo" href="https://campus.fi.uba.ar/mod/resource/view.php?id=194190">De Carlos A. Furuti</a>, Que es un material muy recomendable, y tiene también una sección de desarrollos
+                        de proyecciones, entre las páginas 53 y 81.</li>
+                    <li>La <a class="recurso externo" href="https://en.wikipedia.org/wiki/List_of_map_projections">Lista de proyecciones cartográficas</a> de Wikipedia, Muchas de las cuales tienen su desarrollo incluido.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="tema">#4: Métrica de un sistema de coordenadas
+            <label for="mylist-node7">Abrir/Colapsar</label>
+        </div>
+        <div class="collapsible">
+            <input type="checkbox" id="mylist-node7">
+
+            <div class="tema-cuerpo">
+
+                <p>Varios de los conceptos de sistemas de coordenadas que se utilizaron en los temas de cartografía matemática pueden condensarse en el estudio de la métrica dichos sistemas.</p>
+
+                <p>Es interesante considerar la metrica del sistema de coordenadas $$\hat{\varphi},\hat{\lambda}$$, es decir de la latitud y la longitud como coordenadas del espacio representado plano.</p>
+
+                <p> Esto es lo que realizamos en los recursos que proponemos en esta sección </p>
+
+                <ul>
+                    <li><a class="recurso propio video" href="https://campus.fi.uba.ar/mod/url/view.php?id=202306">Clase de matriz métrica en video.</a></li>
+                    <li><a class="recurso propio" href="https://campus.fi.uba.ar/mod/resource/view.php?id=202309">Apunte de matriz métrica, transcripción del video.</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="tema">
+            #5: Coordenadas sobre la Tierra
+            <label for="mylist-node4">Abrir/Colapsar</label>
+        </div>
+        <div class="collapsible">
+            <input type="checkbox" id="mylist-node4">
+
+            <div class="tema-cuerpo">
+
+                <p> Para poder medir coordenadas sobre la tierra se debe definir un marco de referencia que sea accesible desde la superficie de la misma, es decir, debemos construir un conjunto de ecuaciones matemáticas y realidades físicas en las que podamos
+                    basar las mediciones cartográficas.</p>
+
+                <p>
+                    En este tema veremos las bases conceptuales y matematicas de los marcos de referencia, y la forma en la que se puede acceder a medir magnitudes dentro de los mismos.
+                </p>
+
+                <p>
+                    El material de trabajo consiste en:
+                </p>
+
+                <ul>
+                    <li><a class="recurso propio" href="https://campus.fi.uba.ar/mod/resource/view.php?id=189794">Un apunte teórico</a></li>
+                    <li><a class="recurso propio video" href="https://campus.fi.uba.ar/mod/url/view.php?id=189772">Una Clase en Video</a></li>
+                </ul>
+
+                <p>
+                    Es importante que reconozcan las diferencias conceptuales entre marcos y sistemas de referencia, que reconozcan que los mismos datos expresados en diversos marcos de referencia pueden resultar en coordenadas diferentes, y que se detengan a observar que
+                    cada dato cartográfico tiene asociado un marco de referencia y un sistema de representación. Estos conceptos se ponen en práctica en la Actividad 3, donde se trabaja con datos en el marco Campo Inchauspe 69, y en el marco WGS84, compatible
+                    con ITRF, y por ende con POSGAR07.
+                </p>
+            </div>
+        </div>
+
+
+        <div class="tema">#6: Cartografía Temática
+            <label for="mylist-node5">Abrir/Colapsar</label>
+        </div>
+        <div class="collapsible">
+            <input type="checkbox" id="mylist-node5">
+
+            <div class="tema-cuerpo">
+
+                <p>Los conceptos de cartografía temática son menos exactos que los de la cartografía matemática. Distintos autores proponen distintos esquemas para analizar la forma en la que la información se comunica a través de un mapa, en lo que se conoce
+                    como semiología gráfica</p>
+
+                <p>En primer lugar trabajaremos con <a class="recurso propio video" href="https://campus.fi.uba.ar/mod/url/view.php?id=189774">una clase en video</a>, donde además de introducir los conceptos se hace una pequeña revisión de la bibliografía
+                    disponible.
+                </p>
+
+                <p>El material de trabajo escrito es diverso, y recomendamos abordarlo teniendo en cuanta <a class="recurso propio" href="https://campus.fi.uba.ar/mod/resource/view.php?id=189797">el póster en formato PDF</a>, donde están enumerados los objetivos
+                    de aprendizaje que tenemos para este tema, junto con varios recursos para consulta.
+                </p>
+
+                <p>Recomendamos tomarse un tiempo para abordar el tema de la siguiente manera:</p>
+
+                <ul>
+                    <li>Observar con atención el póster. Prestar atención a los términos utilizados y preguntarse qué puede significar cada uno.</li>
+                    <li>Recorrer a conciencia los recursos propuestos en el poster.</li>
+                    <li>Dar una hojeada a la bibliografía que dejamos en <a class="recurso externo" href="https://campus.fi.uba.ar/mod/folder/view.php?id=163447">Bibliografía - Cartografía Temática</a>.</li>
+                    <li>Realizar la Actividad inicial de Carta temática, para fijar el contenido aprendido</li>
+                </ul>
+
+                <p>Finalmente, hay un video con <a class="recurso propio video" href="https://campus.fi.uba.ar/mod/url/view.php?id=189775">ejemplos de cartas</a>, donde se hace un análisis de casos, para tener una idea práctica del tema.</p>
+
+                <h3>Orientaciones para la lectura de la bibliografía</h3>
+
+                <p>Los recursos que les proveemos están en su mayoría en ingles, en castellano recomendamos especialmente la siguiente página: https://volaya.github.io/libro-sig/chapters/Mapas.html .</p>
+                <p>Sin embargo, consideramos que la bibliografía en inglés que proveemos es un aporte escencial al tema, dificil de remplazar. Cada material tiene sus características propias:
+                </p>
+                <ul>
+                    <li> El libro de Dent, tiene muy buenas y bien ordenadas definiciones. Recomendamos al menos hojear el índice, las figuras, y los glosarios que presenta, y prestar atención especial a cómo divide el análisis de cada tema en partes simples.
+                    </li>
+                    <li> El capitulo 10 del libro de Cairo es sumamente interesante, es muy ameno y tiene muy buenas figuras. (el resto del libro está mas orientado a datos en general, aunque es muy interesante.)</li>
+                    <li> El libro de Tyner está escrito en lenguaje muy simple, sin complicaciones técnicas. Se destacan sus ejemplos y especialmente los cuadros comparativos, donde resume lo que otros autores expresan sobre distintas temáticas (por ejemplo
+                        variables visuales o operaciones de generalización). Recomendamos al menos mirar las figuras y las tablas leyendo los pies de las mismas. Destacamos de este libro también que dedica un capitulo a hablar sobre el color y las diversas
+                        formas de manejarlo, lo cual es de sumo interés porque es un punto que no está presente en los recursos que se encuentran a mano en internet.</li>
+                    <li> El libro de Bertín es la fuente de muchos ejemplos sobre el tema que se encuentran en otras fuentes, es un clásico en la materia. Les pedimos que revisen con atención los temas que trata, al menos leyendo el índice y el primer párrafo
+                        de cada sección. Miren con atención las figuras y ejemplos que presenta.</li>
+                    <li> Los materiales de Robinson y MacEachren son más díficiles de aprovechar en una lectura rápida, aunque el segundo tiene algunos ejemplos interesantes. Sin embargo los incluimos porque son autores clásicos en la materia.</li>
+                    <li> El apunte de Guinzburg tiene la ventaja de estar en castellano, pero les sugerimos que lo tomen para familiarizarse con el vocabulario. Sin embargo, es muy importante que se diversifiquen en cuanto a los autores que consultan, y no
+                        se apoyen en uno solo. Recuerde que es una materia opinable, donde encasillarse lleva a imposibilitar el avance en la parte práctica.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="tema">#7: Coordenadas sobre el Elipsoide
+            <label for="mylist-node8">Abrir/Colapsar</label>
+        </div>
+        <div class="collapsible">
+            <input type="checkbox" id="mylist-node8">
+
+            <div class="tema-cuerpo">
+                <p>Para poder desarrollar sitemas de representación utilizando un marco de referencia que defina la latitud y la longitud en función de un elipsoide, debemos comenzar por estudiar la forma en la que estas coordenadas se traducen al elipsoide
+                    y describir lo que conocemos como coordenadas elipsoidales o geodésicas.
+                </p>
+
+                <p>El material de trabajo para este tema consiste en:</p>
+                <ul>
+                    <li>
+                        <a class="recurso propio video" href="https://campus.fi.uba.ar/mod/url/view.php?id=189776"> Un video de la clase introductoria.</a></li>
+                    <li>
+                        <a class="recurso propio video" href="https://campus.fi.uba.ar/mod/url/view.php?id=205534">Un video sobre desarrollo de proyecciónes en el elipsoide.</a></li>
+                    <li>El apunte <a class="recurso propio" href="https://campus.fi.uba.ar/mod/resource/view.php?id=189799">de geometría del elipsoide</a> donde se desarrolla lo escencial sobre coordenadas elipsoidales, incluyendo la solución de los problemas
+                        necesarios para dar valor numérico a las mismas. </li>
+                    <li>El apunte <a class="recurso externo" href="https://campus.fi.uba.ar/mod/resource/view.php?id=189801">Sobre el Teorema de Meusnier</a>, donde se explica el desarrollo de dicho teorema, que, si bien no es indispensable conocer su demostración,
+                        sí es un resultado escencial al resto del desarrollo del tema, que permite relacionar el radio de los paralelos con la geometría del elipsoide.</li>
+                    <li>Dos apuntes complementarios, en inglés, que son en parte fuente del primer apunte, pero tocan algunos temas más, que son de interés, aunque van más allá de lo requerido por la materia:
+                        <ul>
+                            <li>El apunte <a class="recurso externo" href="https://campus.fi.uba.ar/mod/resource/view.php?id=189803">de Christofer Jekeli</a></li>
+                            <li>El apunte <a class="recurso externo" href="https://campus.fi.uba.ar/mod/resource/view.php?id=189804">de Kai Borre</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="tema">#8: Sistema Gauss-Krüger
+            <label for="mylist-nodeA">Abrir/Colapsar</label>
+        </div>
+        <div class="collapsible">
+            <input type="checkbox" id="mylist-nodeA">
+
+            <div class="tema-cuerpo">
+                <p>
+                El sistema de coordenadas Gauss Krüger, es el sistema oficial de la republica argentina. <br/>
+                Se trata de una proyección Transversa de Mercator desarrollada sobre el elipsoide.
+
+                El desarrollo de la proyección no es trivial, debido a las particularidades de la geometría del elipsoide,
+                técnicamente podemos decir que el motivo de esta dificultad es que la las líneas geodésicas perpendiculares
+                a la linea de tangencia no son curvas cuya expresión se trabaje fácilmente.
+                </p>
+
+                <p>
+                El material de trabajo para este tema consiste en:
+                </p>
+                <ul>
+                    <li>
+                        <a class="recurso propio video" href="https://drive.google.com/file/d/11Sp6tF8vZA7WgcBgnjsBeayDYIahdIsH/view?usp=sharing">Un video de la clase</a> de Gauss-Kruger en Febrero 2021. </li>
+                    <li>El apunte <a class="recurso propio" href="https://campus.fi.uba.ar/mod/resource/view.php?id=189805">De desarrollo de la proyección</a> donde se desarrollan las
+                    ecuaciones para la proyección incluyendo también el cálculo de deformación. El método seguido es el que se toma normalmente como oficial para la argentina, basado
+                    en el desarrollo en serie de taylor partiendo de Meridiano Central de Faja.
+                    </li>
+                    <li>El apunte <a class="recurso externo" href="https://campus.fi.uba.ar/mod/resource/view.php?id=189806">de formulas de Redfearn 1948</a>, donde están las 
+                      ecuaciones de la proyección en su primer desarrollo completo publicado, que normalmente se toma como referencia.</li>
+                    </li>
+                    <li>La planilla <a class="recurso externo" href="https://campus.fi.uba.ar/mod/resource/view.php?id=211170">Utilizada en clase</a>, donde pueden experimentar
+                      con las ecuaciones de la proyección e investigar la influencia de cada término en el resultado.</li>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="tema">Material General
+            <label for="mylist-node6">Abrir/Colapsar</label>
+        </div>
+        <div class="collapsible">
+            <input type="checkbox" id="mylist-node6">
+
+            <div class="tema-cuerpo">
+                <p>Parte del material de esta sección no lo asignamos a ninguna clase en particular.
+                </p>
+                <ul>
+                    <li>El archivo <a class="recurso propio" href="https://campus.fi.uba.ar/mod/resource/view.php?id=189785">Guia de Ejercicios</a> es una guía de ejercicios que surgieron de exámenes parciales de años anteriores. </li>
+                    <li>El archivo <a class="recurso propio" href="https://campus.fi.uba.ar/mod/resource/view.php?id=189786">Pautas para la Elaboración de Informes</a> es un documento general, orientado a ayudarlos en la redacción de informes. Les pedimos
+                        que lo tengan en cuenta a la hora de realizar las entregas de la materia.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
