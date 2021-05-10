@@ -127,6 +127,12 @@
     padding: 1em;
     padding-bottom: 0.3em;
     }
+    #iteoria .tema p {
+    font-size: 1.7rem;
+    font-family: 'Montserrat Alternates', sans-serif;
+    padding: 0em;
+    margin: 0em;
+    }
     div.collapsible > input + * {
      display: none;
     }

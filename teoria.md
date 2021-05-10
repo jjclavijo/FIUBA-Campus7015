@@ -1,14 +1,9 @@
 ::: {#iteoria}
-::: {.tema}
-Cartografía: Cronograma de la materia
-define(`xNUM',eval(`1'))dnl
-
-<label for="mylist-node`'xNUM">Abrir/Colapsar</label>
+::: {.tema style="display: none"}
+Cartografía: Cronograma de la materia Abrir/Colapsar
 :::
 
 ::: {.collapsible}
-<input type="checkbox" id="mylist-node`'xNUM">
-
 ::: {.tema-cuerpo}
 
   -------------- -------------- ---------------- -------------------- ---------------
@@ -99,18 +94,11 @@ define(`xNUM',eval(`1'))dnl
 :::
 
 ::: {.tema}
-\#1: Cartografía Matemática, introducción 
-
-define(`xNUM',eval(xNUM + 1))dnl
-
-<label for="mylist-node`'xNUM">Abrir/Colapsar</label>
+\#1: Cartografía Matemática, introducción Abrir/Colapsar
 :::
 
 ::: {.collapsible}
-<input type="checkbox" id="mylist-node`'xNUM">
-
 ::: {.tema-cuerpo}
-
 El material de la primera clase es variado.
 
 En primer lugar está el video [Tema 1 - Parametros Coordenadas y
@@ -143,16 +131,11 @@ En segundo lugar, el material escrito es:
 
 ::: {.tema}
 \#2: Formalización Matemática: Vectore Base y Sistemas de Coordenadas
-define(`xNUM',eval(xNUM + 1))dnl
-
-<label for="mylist-node`'xNUM">Abrir/Colapsar</label>
+Abrir/Colapsar
 :::
 
 ::: {.collapsible}
-<input type="checkbox" id="mylist-node`'xNUM">
-
 ::: {.tema-cuerpo}
-
 El material de la segunda clase profundiza lo visto en la primera.
 
 En esta clase formalizaremos la notación a utilizar en el resto de la
@@ -171,18 +154,11 @@ El material consta de:
 :::
 
 ::: {.tema}
-\#3: Desarrollo de Proyecciónes 
-
-define(`xNUM',eval(xNUM + 1))dnl
-
-<label for="mylist-node`'xNUM">Abrir/Colapsar</label>
+\#3: Desarrollo de Proyecciónes Abrir/Colapsar
 :::
 
 ::: {.collapsible}
-<input type="checkbox" id="mylist-node`'xNUM">
-
 ::: {.tema-cuerpo}
-
 En las clases anteriores se sentaron las bases para el desarrollo y
 análisis de representaciónes cartográficas cómo transformaciónes
 matemáticas.
@@ -239,15 +215,10 @@ analizar.
 :::
 
 ::: {.tema}
-\#4: Métrica de un sistema de coordenadas 
-define(`xNUM',eval(xNUM + 1))dnl
-
-<label for="mylist-node`'xNUM">Abrir/Colapsar</label>
+\#4: Métrica de un sistema de coordenadas Abrir/Colapsar
 :::
 
 ::: {.collapsible}
-<input type="checkbox" id="mylist-node`'xNUM">
-
 ::: {.tema-cuerpo}
 Varios de los conceptos de sistemas de coordenadas que se utilizaron en
 los temas de cartografía matemática pueden condensarse en el estudio de
@@ -269,15 +240,10 @@ Esto es lo que realizamos en los recursos que proponemos en esta sección
 :::
 
 ::: {.tema}
-\#5: Coordenadas sobre la Tierra 
-define(`xNUM',eval(xNUM + 1))dnl
-
-<label for="mylist-node`'xNUM">Abrir/Colapsar</label>
+\#5: Coordenadas sobre la Tierra Abrir/Colapsar
 :::
 
 ::: {.collapsible}
-<input type="checkbox" id="mylist-node`'xNUM">
-
 ::: {.tema-cuerpo}
 Para poder medir coordenadas sobre la tierra se debe definir un marco de
 referencia que sea accesible desde la superficie de la misma, es decir,
@@ -309,15 +275,10 @@ compatible con ITRF, y por ende con POSGAR07.
 :::
 
 ::: {.tema}
-\#6: Cartografía Temática 
-define(`xNUM',eval(xNUM + 1))dnl
-
-<label for="mylist-node`'xNUM">Abrir/Colapsar</label>
+\#6: Cartografía Temática Abrir/Colapsar
 :::
 
 ::: {.collapsible}
-<input type="checkbox" id="mylist-node`'xNUM">
-
 ::: {.tema-cuerpo}
 Los conceptos de cartografía temática son menos exactos que los de la
 cartografía matemática. Distintos autores proponen distintos esquemas
@@ -399,15 +360,10 @@ sus características propias:
 :::
 
 ::: {.tema}
-\#7: Coordenadas sobre el Elipsoide 
-define(`xNUM',eval(xNUM + 1))dnl
-
-<label for="mylist-node`'xNUM">Abrir/Colapsar</label>
+\#7: Coordenadas sobre el Elipsoide Abrir/Colapsar
 :::
 
 ::: {.collapsible}
-<input type="checkbox" id="mylist-node`'xNUM">
-
 ::: {.tema-cuerpo}
 Para poder desarrollar sitemas de representación utilizando un marco de
 referencia que defina la latitud y la longitud en función de un
@@ -448,15 +404,10 @@ El material de trabajo para este tema consiste en:
 :::
 
 ::: {.tema}
-\#8: Sistema Gauss-Krüger 
-define(`xNUM',eval(xNUM + 1))dnl
-
-<label for="mylist-node`'xNUM">Abrir/Colapsar</label>
+\#8: Sistema Gauss-Krüger Abrir/Colapsar
 :::
 
 ::: {.collapsible}
-<input type="checkbox" id="mylist-node`'xNUM">
-
 ::: {.tema-cuerpo}
 El sistema de coordenadas Gauss Krüger, es el sistema oficial de la
 republica argentina.\
@@ -493,17 +444,11 @@ El material de trabajo para este tema consiste en:
 :::
 
 ::: {.tema}
-Material General 
-define(`xNUM',eval(xNUM + 1))dnl
-
-<label for="mylist-node`'xNUM">Abrir/Colapsar</label>
+Material General Abrir/Colapsar
 :::
 
 ::: {.collapsible}
-<input type="checkbox" id="mylist-node`'xNUM">
-
 ::: {.tema-cuerpo}
-
 Parte del material de esta sección no lo asignamos a ninguna clase en
 particular.
 
@@ -519,5 +464,3 @@ particular.
 :::
 :::
 :::
-
-</div>
