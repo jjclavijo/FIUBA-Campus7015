@@ -5,8 +5,6 @@ define(`RQ',`changequote(<,>)dnl`
 'changequote`'')
 define(`xNUM',eval(`0'))dnl
 
-define(``:::'',`SARLANGA')
-
 define(`xCOL',`define(`xNUM',eval(xNUM + 1))dnl
 
 LQ()LQ()LQ(){=html}

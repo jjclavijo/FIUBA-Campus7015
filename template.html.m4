@@ -8,9 +8,13 @@ divert(0)dnl
     <script>
         var sheet = document.createElement('style')
         sheet.innerHTML = LQ()
-include(`styles.css')
+include(`styles.'xNAME`.css')
 LQ();
         document.body.appendChild(sheet);
     </script>
 syscmd(`m4 'xFILE` | pandoc -t html5')
+
+sinclude(`foot.'xNAME`.html')
+
 </div>
+

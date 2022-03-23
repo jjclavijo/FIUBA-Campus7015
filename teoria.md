@@ -1,6 +1,6 @@
 ::: {#iteoria}
 ::: {.tema style="display: none"}
-Cartografía: Cronograma de la materia Abrir/Colapsar
+Cartografía: Cronograma de la materia
 :::
 
 ::: {.collapsible}
@@ -94,7 +94,7 @@ Cartografía: Cronograma de la materia Abrir/Colapsar
 :::
 
 ::: {.tema}
-\#1: Cartografía Matemática, introducción Abrir/Colapsar
+\#1: Cartografía Matemática, introducción
 :::
 
 ::: {.collapsible}
@@ -131,7 +131,6 @@ En segundo lugar, el material escrito es:
 
 ::: {.tema}
 \#2: Formalización Matemática: Vectore Base y Sistemas de Coordenadas
-Abrir/Colapsar
 :::
 
 ::: {.collapsible}
@@ -154,7 +153,7 @@ El material consta de:
 :::
 
 ::: {.tema}
-\#3: Desarrollo de Proyecciónes Abrir/Colapsar
+\#3: Desarrollo de Proyecciónes
 :::
 
 ::: {.collapsible}
@@ -215,7 +214,7 @@ analizar.
 :::
 
 ::: {.tema}
-\#4: Métrica de un sistema de coordenadas Abrir/Colapsar
+\#4: Métrica de un sistema de coordenadas
 :::
 
 ::: {.collapsible}
@@ -240,7 +239,7 @@ Esto es lo que realizamos en los recursos que proponemos en esta sección
 :::
 
 ::: {.tema}
-\#5: Coordenadas sobre la Tierra Abrir/Colapsar
+\#5: Coordenadas sobre la Tierra
 :::
 
 ::: {.collapsible}
@@ -260,7 +259,10 @@ El material de trabajo consiste en:
     teórico](https://campus.fi.uba.ar/mod/resource/view.php?id=189794){.recurso
     .propio}
 -   [Una Clase en
-    Video](https://campus.fi.uba.ar/mod/url/view.php?id=189772){.recurso
+    Video (2020)](https://campus.fi.uba.ar/mod/url/view.php?id=189772){.recurso
+    .propio .video}
+-   [Una Clase en
+    Video (2021)](https://campus.fi.uba.ar/mod/url/view.php?id=229203){.recurso
     .propio .video}
 
 Es importante que reconozcan las diferencias conceptuales entre marcos y
@@ -271,11 +273,18 @@ tiene asociado un marco de referencia y un sistema de representación.
 Estos conceptos se ponen en práctica en la Actividad 3, donde se trabaja
 con datos en el marco Campo Inchauspe 69, y en el marco WGS84,
 compatible con ITRF, y por ende con POSGAR07.
+
+Para ayuda en la actividad, alguno temas básicos sobre el tipo de datos
+utilizado y las transformaciones de coordenadas incluidas, se pueden encontrar
+[en el video de clase](https://campus.fi.uba.ar/mod/url/view.php?id=229208){.recurso .propio .video},
+Aunque también hay mucha información en la sección
+[de tutoriales sobre datos geográficos](https://campus.fi.uba.ar/course/view.php?id=1093&section=5){.recurso .propio}
+
 :::
 :::
 
 ::: {.tema}
-\#6: Cartografía Temática Abrir/Colapsar
+\#6: Cartografía Temática
 :::
 
 ::: {.collapsible}
@@ -360,7 +369,7 @@ sus características propias:
 :::
 
 ::: {.tema}
-\#7: Coordenadas sobre el Elipsoide Abrir/Colapsar
+\#7: Coordenadas sobre el Elipsoide
 :::
 
 ::: {.collapsible}
@@ -404,7 +413,7 @@ El material de trabajo para este tema consiste en:
 :::
 
 ::: {.tema}
-\#8: Sistema Gauss-Krüger Abrir/Colapsar
+\#8: Sistema Gauss-Krüger
 :::
 
 ::: {.collapsible}
@@ -444,7 +453,7 @@ El material de trabajo para este tema consiste en:
 :::
 
 ::: {.tema}
-Material General Abrir/Colapsar
+Material General
 :::
 
 ::: {.collapsible}
