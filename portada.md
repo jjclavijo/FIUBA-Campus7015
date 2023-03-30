@@ -20,56 +20,90 @@ la materia, esta formado por **Javier J. Clavijo**, y **Mariano Harguinteguy**
 
 ::: titulo
 
-## Esta Semana
+## Clase pasada.
 
-Estas semanas (7, 8 y 9 de cursada) se trabajó con los conceptos de Marco y Sistema de Referencia,
-Sistemas de coordenadas, y cómo estos se expresan en los datos geográficos digitales con los que trabajamos.
+En la primera clase, además de las correspondientes presentaciones, empezamos a trabajar en cartografía matemática.
 
-Se resolvieron algunas dudas sobre el TP anterior
-[se pueden ver en este link](https://drive.google.com/file/d/19rRHZo7itt0zKeYKUdfMLLq3rccl6IsX/view?usp=sharing){.recurso .propio .video}
+Hablamos de **qué son coordenadas** -spoiler: son números-, para pasar luego a
+ver cómo existen determinadas **magnitudes asociadas a un espacio** que no
+dependen de las coordenadas en las que se expresen las posiciones de los
+puntos, por ejemplo, la distancia cartasiana.
 
-Además del material teórico, que pueden consultar en la sección correspondiente. Trabajamos con
-un ejercicio práctico a partir de la información de cartas topográficas con información referida
-a Campo Inchauspe '69, y con datos de un modelo de terreno referido a WGS84, que es compatible
-con ITRF y por lo tanto con POSGAR07.
+A partir de esto vimos cómo determinados sistemas de coordenadas pueden tener
+propiedades interesantes que nos ayudan a calcular algunas de estas magnitudes,
+y vimos también cómo podíamos construir **nuevos sistemas de coordenadas** a
+partir de aplicar una transformación a un sistema conocido.
 
-Para este ejercicio, es importante consultar:
+Luego vimos cómo, si **hacemos una aplicación** de un sistema de coordenadas
+sobre las cartesianas de un nuevo espacio, podemos tener coordenada que
+describen posiciones en dos espacios distintos (Ambos $\mathbb{R}^2$ en nuestro
+ejemplo), y son cartesianas de uno pero no del otro.
 
-- La [sección de tutoriales](https://campus.fi.uba.ar/course/view.php?id=1093&section=5){.recurso .propio} del campus.
-- El [video de clase](https://campus.fi.uba.ar/mod/url/view.php?id=229208){.recurso .propio .video} sobre como las coordenadas se expresan en los datos digitales.
-- El [video de clase](https://campus.fi.uba.ar/mod/url/view.php?id=229215){.recurso .propio .video} aclarando el proceso de obtención de las coordenadas utilizando QGIS.
+Hablamos luego del **espacio tangente a una función en un punto**, primero para
+una función en una variable -que resulta en una recta y lo asociamos al
+polinomio de taylor de grado 1-, y luego para una función en dos variables,
+como puede ser un cambio de coordendas, viendo que se genera un plano tangente
+que en la vecindad del punto analizado tiene propiedades similares a la función
+que estamos mirando.
 
+Tomando esto volvimos al ejemplo de dos espacios distintos que comparten
+sistemas de coordenadas. Vimos que el espacio tangente, en uno de los espacios,
+a las coordenadas cartesianas del otro, se comporta de una forma particular que
+puede describirse a partir de los vectores que surgen de modificar cada
+coordenada y obervar la variación de la posicion, lo escribimos con una
+derivada $${\partial \underline{\hat{r}}} \over {\partial x}.$$
 
-Aclaramos algunos puntos de importancia:
+Luego vimos de qué forma un vector que existe en un espacio se comporta en el
+otro, interpretando al vector como "me muevo por este espacio tantos metros
+hacia esta dirección". Finalmente hablamos de la posibiliad de **definir una
+medida de la diferencia de comportamiento entre espacios a partir de las normas
+de estos vectores**, lo anotamos como
+$$\frac{\|\underline{\hat{x}}\|}{\|\underline{x}\|},$$ dónde el acento
+circunflejo indica que estamos trabajado en el espacio "de llegada", en el que
+$x$ e $y$ no son coordenadas cartesianas. Este concepto lo relacionamos al
+concepto de escala
 
-En los tutoriales de la clase del 8/6, se trabajó en la obtención de coordenadas proyectadas
-con estas se trabaja directamente en uno de los ejercicios del TP (transformación 2D).
+Finalmente, cerrando el bloque, hicimos notar que las coordenadas cartesianas
+de un espacio tienen la propiedad de que sus vectores asociados - que llamamos
+vectores base del sistema de coordenadas - tienen norma unitaria y que el
+producto interno entre ellos es 0. Estas cosas se dan por definición, pero nos
+sirven -vimos en clase- para poder calcular operaciones sobre otros vectores
+definidos en función de estos primeros. Construyendo sobre esta idea, vimos qué
+conociendo las derivadas de un sistema de coordenadas con respecto a otro,
+podemos expresar la base vectorial de un sistema no cartesiano en función de
+los vectores cartesianos, aplicando la regla de la cadena. BONUS: no se
+mencionó en clase, pero la razón por la que los vectores cartesianos no se
+derivan es porque son una propiedad del espacio y son constantes.
 
-Sin embargo, el caso mas importante es el segundo ejercicio del TP, la trasformación tridimensional.
-En este caso, es indispensable hacer correctamente la transformación desde el sistema proyectado
-hacia las coordenadas geográficas, y desde las coordenadas geográficas hacia el sistema cartesiano,
-teniendo siempre en cuenta el elipsoide y el marco de referencia utilizado para generar el dato.
+En el último bloque comenzamos hablando de cómo **cualquier mapa que queramos
+hacer se ve determinado por las magnitudes que queramos conservar** dentro de el.
+Tomando el hilo de este concepto, trabajamos para ver que la forma en la que
+unos vectores se transforman al pasar de un espacio a otro -en el ejemplo del
+primer bloque- se comportan de manera tal que hallando unas magnitudes
+determinadas, basadas en productos internos, **podemos encontrar una forma de
+calcular magnitudes locales para los mismos vectores en ambos espacios** y
+compararlas. Cerramos diciendo que esas magnitudes que podemos calcular son las
+que vamos a usar para definir estas restricciones que queremos conservar o no
+en nuestro mapa.
 
-Tal como lo vimos en clase, los pasos de la transformación se pueden ver en Qgis por ejemplo cuando
-para campo inchauspe propone varias transformaciones utilizando el formato de "pipelines" de la librería proj.
-Es de sumo interés ver como ejemplo lo que dice la misma documentación de la librería,
-[en este link](https://proj-tmp.readthedocs.io/en/6.2/usage/transformation.html#transformation){.recurso .externo}
+En medio de esto hablamos de la matriz métrica, y la relación que esta tiene
+con un cambio de base, reforzando la idea de que **las transformaciones de
+coordenadas, _localmente_, se comportan como si fueran cambios de base**.
+
+Hicimos también algunos comentarios sobre la relación que estos vectores base
+de los que hablamos tienen que ver con las unidades de integración que aparecen
+en algunas cuentas que hacen en Fisica II.
 
 :::
 
 ::: titulo
 
-## Semanas Pasadas \#4
+## Algunas cosas extra que si les llaman la atención nos preguntan
 
-El tema teórico de esta semana fue el análisis de la matriz métrica.
+### Rúbricas de autoevaluación
 
-Les dejamos el link a la grabación a esa parte de la clase:
-
-- [Grabación 18 de Mayo](https://drive.google.com/file/d/1Ymo1k6GVZuzvA0b2yG4yzao5QYXNYVvE/view?usp=sharing)
-
-Para redondear un poco el contenido de cartografía matemática sobre la esfera
-les pedimos que entre todos elaboren algunas rúbricas de auto-evaluación sobre
-los contenidos de las clases.
+Un método de lo que mencionamos como autoevaluación es la elaboración de rúbricas
+de auto-evaluación sobre los contenidos de las clases.
 
 La rubrica consiste en un cuadro de doble entrada donde cada fila corresponde
 a un tema, y cada columna corresponde a un nivel de comprensión:
@@ -80,36 +114,7 @@ a un tema, y cada columna corresponde a un nivel de comprensión:
 - Competencias: Cómo se puede llevar a la práctica lo aprendido sobre el tema.
 
 Esta tarea es muy importante para que entre todos tengamos un diagnóstico de
-cómo nos vemos frente a la materia, y podamos diseñar lo que queda del cuatrimestre.
-
-:::
-
-::: titulo
-
-## Semanas Pasadas \#3
-
-Esta Semana trabajamos en el desarrollo de proyecciones. Además de
-material que está en la sección teórica, tenemos los siguientes ejemplos prácticos
-de desarrollo:
-
-- [Desarrollo Proyección Kavrainsky](https://drive.google.com/file/d/1UWoFQAa2ASB2in3A9aqtcR9xFuV4aeVm/view?usp=sharing)
-- [Aclaraciónes sobre proyección cilíndrica equivalente](https://drive.google.com/file/d/14T62AaePPnk8ArRv57WHZdxbljNqBodw/view?usp=sharing)
-- [Ejemplo: Desarrollo de la proyección Equivalente Cuartica](https://campus.fi.uba.ar/mod/resource/view.php?id=189792)
-
-Y podemos trabajar con la proyección de mercator haciendo algunas cuentas para
-verificar sus propiedades a partir de trabajar con triángulos esféricos suficientemente pequeños:
-
-- [Ejemplo: Ploteo de línea Loxodrómica sobre Mercator](https://campus.fi.uba.ar/mod/resource/view.php?id=225738)
-- [Ejemplo: Conformidad con triángulos esféricos sobre Mercator](https://campus.fi.uba.ar/mod/resource/view.php?id=225743)
-
-También podemos analizar el caso de una proyección cuya construcción es geométrica,
-pero tiene un parámetro que puede variar (de Braun). En este caso, veremos como, según
-se defina este parámetro, la proyección puede parecerse a la de mercator.
-Es interesante que revisen este ejemplo, y piensen cómo se expresan las magnitudes
-que se trabajan en las planillas utilizando la notación de vectores base que usamos en la
-teoría, y cómo esto sirve para comparar las proyecciones.
-
-- [Comparación Mercator Braun](https://campus.fi.uba.ar/mod/folder/view.php?id=225748)
+cómo nos vemos frente a la materia, y podamos encarar lo que va quedando por delante.
 
 :::
 
@@ -128,41 +133,6 @@ transformado. Vimos cómo para cualquier transformación existen
 direcciónes fundamentales que tienen comportamientos particulares con
 respecto a la deformación.
 
-Finalmente dimos un ejemplo para integrar estos conocimientos. El
-material agregado (por sobre lo que está en la sección teórica) fue:
-
-[La grabación de la clase del martes
-27](https://drive.google.com/file/d/1JGxHq-_jqM9I91A8b4_mxRKfdbSelwEd/view){.recurso
-.propio .video} y el borrador de las figuras que se realizaron en esa
-clase [que se encuentra adjunto en la sección de material
-teórico](https://campus.fi.uba.ar/mod/resource/view.php?id=221192){.recurso
-.propio}
-
-[Una](https://drive.google.com/file/d/15IbdxMgtgebZCsgsQfPhzi4OtSmAoW9A/view){.recurso
-.propio .video} y
-[Otra](https://drive.google.com/file/d/19Xark1eqZPvUp5kYqQ9QEdedPjeaCuJy/view){.recurso
-.propio .video} grabaciones de la clase del martes 5/10, y el borrador
-de las figuras que se realizaron en esa clase [que se encuentra adjunto
-en la sección de material
-teórico](https://campus.fi.uba.ar/mod/resource/view.php?id=223989){.recurso
-.propio}
-
-Agregaremos links en breve a las planillas de la actividad realizada en
-clase, y los comentarios que surgan del aporte de todos.
-
-:::
-
-::: titulo
-
-## Semanas Pasadas \#1
-
-Comenzamos la cursada con una actividad introductoria, En la sección de
-material teórico utilizado está en el \#1 de la sección de material
-teórico.
-
-En breve publicaremos aqui los links a las versiones de ejemplo
-resueltas de las actividades realizadas, y algunos aportes que fueron
-surgiendo a partir de sus entregas.
 
 :::
 

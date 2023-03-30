@@ -1,97 +1,4 @@
 ::: {#iteoria}
-::: {.tema style="display: none"}
-Cartografía: Cronograma de la materia
-:::
-
-::: {.collapsible}
-::: {.tema-cuerpo}
-
-  -------------- -------------- ---------------- -------------------- ---------------
-      Fecha          Notas            Tema              Tareas           Entregas
-
-       9-29            0          Introducción        Ver video              \
-                                   General /       Introductorio y
-                                   Coloquial       apuntes Echert -
-                                  Coordenadas    Notas - Tierra_carta
-
-       10-6            5             Bases         Ver video Clase           \
-                                 Vectoriales (+    Vectores Base -
-                                    revision     Apunte Vectores Base
-                                Introductoria) -    y Métrica (v1)
-                                 Orientaciones
-                                      Tps
-
-      10-13            10       Proyecciónes con    Ver video año       Entrega TP
-                                figura auxiliar    anterior y este     Introductorio
-                                 (Desarrollo de  sobre desarrollo de
-                                  alguna) (se      proyecciones con
-                                grabó la clase)   figura auxiliar -
-                                                   Apuntes Varios +
-                                                    Ejemplo Q_auth
-
-      10-20            15        Más desarrollo   Ver video Metrica          \
-                                de Proyecciones     Repasar Apunte
-                                 / Métrica (se      Vectores Base
-                                Grabó Kavrayski
-                                VII no se editó)
-
-      10-27            20          Métrica -          Apunte de              \
-                                  Autovalores     transcripción del
-                                 Autovectores -    video de métrica
-                                Descomposición -
-                                Revisión avances
-
-       11-3            25           Marco de      Ver videos Datum e    Entrega TP
-                                Referencia - C1      Intro a Gis       Proyecciones
-                                 - Introducción
-
-      11-10            30           Marco de           Práctica              \
-                                Referencia - C2   Georreferenciación
-                                  - Sistema y        Medición de
-                                     Marco           coordenadas.
-
-      11-17            35         Introducción       Revisión de        Entrega TP
-                                     Datos           Tutoriales y          Datum
-                                 Geográficos y        Software,
-                                Carta Temática + Herramientas Dibujar
-                                   Mínimo TP4    Grillas y costas en
-                                                      distintas
-                                                     coordenadas
-
-      11-24            40       Discusión TP 4 -          \                  \
-                                Discusión Carta
-                                    Temática
-
-       12-1            45        Geometría del            \               Entrega
-                                  Elipsoide --                           Borrador
-                                Discusión Carta                          Temática
-                                    temática                           (Obligatorio)
-
-       12-8            50              \                  \               Entrega
-                                                                       Borrador TP 4
-                                                                        (Como esté)
-
-      12-15            55          Mercator y             \               Entrega
-                                 Estereográfica                       Definitiva TP 4
-                                en el Elipsoide
-
-       2-2             60       Mas Cartografía           \                  \
-                                    Temática
-
-       2-9             65       Gauss Krugger -           \               Entrega
-                                  Desarrollo y                           Temática
-                                  deformación
-
-       2-16            70              \                  \               Entrega
-                                                                         Elipsoide
-
-       2-23            75       Gauss Krugger -           \             Entregas y
-                                 Casos de Uso y                        Correcciones
-                                    Ejemplos                             Finales /
-                                                                          Cierre.
-  -------------- -------------- ---------------- -------------------- ---------------
-:::
-:::
 
 ::: {.tema}
 \#1: Cartografía Matemática, introducción
@@ -141,7 +48,7 @@ En esta clase formalizaremos la notación a utilizar en el resto de la
 materia, y es de suma importancia aplicarlo en la realización de los
 ejercicios.
 
-El material consta de:
+El material de base consta de:
 
 1.  un video: [Tema 2 - Lineas coordenadas y Bases
     Vectoriales](https://campus.fi.uba.ar/mod/url/view.php?id=189753){.recurso
@@ -149,6 +56,28 @@ El material consta de:
 2.  un apunte escrito: [Tema2 Vectores Base y
     Métrica](https://campus.fi.uba.ar/mod/resource/view.php?id=189791){.recurso
     .propio}
+
+El material extra (menos editado) es:
+
+[La grabación de la clase del martes
+27/09/2021](https://drive.google.com/file/d/1JGxHq-_jqM9I91A8b4_mxRKfdbSelwEd/view){.recurso
+.propio .video} y el borrador de las figuras que se realizaron en esa
+clase [que se encuentra adjunto en la sección de material
+teórico](https://campus.fi.uba.ar/mod/resource/view.php?id=221192){.recurso
+.propio}
+
+[Una](https://drive.google.com/file/d/15IbdxMgtgebZCsgsQfPhzi4OtSmAoW9A/view){.recurso
+.propio .video} y
+[Otra](https://drive.google.com/file/d/19Xark1eqZPvUp5kYqQ9QEdedPjeaCuJy/view){.recurso
+.propio .video} grabaciones de la clase del martes 5/10/2021, y el borrador
+de las figuras que se realizaron en esa clase [que se encuentra adjunto
+en la sección de material
+teórico](https://campus.fi.uba.ar/mod/resource/view.php?id=223989){.recurso
+.propio}
+
+Verán que en esta ultima clase se propuso una actividad para realizar en excel,
+si les resulta de interés nos avisan y preparamos un tutorial sobre ese caso.
+
 :::
 :::
 
@@ -210,6 +139,35 @@ analizar.
     cartográficas](https://en.wikipedia.org/wiki/List_of_map_projections){.recurso
     .externo} de Wikipedia, Muchas de las cuales tienen su desarrollo
     incluido.
+
+Además de este material teórico, tenemos los siguientes ejemplos más prácticos
+de desarrollo:
+
+- [Desarrollo Proyección Kavrainsky](https://drive.google.com/file/d/1UWoFQAa2ASB2in3A9aqtcR9xFuV4aeVm/view?usp=sharing)
+- [Aclaraciónes sobre proyección cilíndrica equivalente](https://drive.google.com/file/d/14T62AaePPnk8ArRv57WHZdxbljNqBodw/view?usp=sharing)
+- [Ejemplo: Desarrollo de la proyección Equivalente Cuartica](https://campus.fi.uba.ar/mod/resource/view.php?id=189792)
+
+Y podemos trabajar con la proyección de mercator haciendo algunas cuentas para
+verificar sus propiedades a partir de operar con triángulos esféricos suficientemente pequeños:
+
+- [Ejemplo: Ploteo de línea Loxodrómica sobre Mercator](https://campus.fi.uba.ar/mod/resource/view.php?id=225738)
+- [Ejemplo: Conformidad con triángulos esféricos sobre Mercator](https://campus.fi.uba.ar/mod/resource/view.php?id=225743)
+
+También podemos analizar el caso de una proyección cuya construcción es geométrica,
+pero tiene un parámetro que puede variar (de Braun). En este caso, veremos como, según
+se defina este parámetro, la proyección puede parecerse a la de mercator.
+Es interesante que revisen este ejemplo, y piensen cómo se expresan las magnitudes
+que se trabajan en las planillas utilizando la notación de vectores base que usamos en la
+teoría, y cómo esto sirve para comparar las proyecciones.
+
+- [Comparación Mercator Braun](https://campus.fi.uba.ar/mod/folder/view.php?id=225748)
+
+Además contamos con un video con respuestas a algunas dudas que surgieron en
+otro cuatrimestre sobre desarrollos puntuales, que pueden servir de ejemplo en
+nuestro caso.
+
+- [se pueden ver en este link](https://drive.google.com/file/d/19rRHZo7itt0zKeYKUdfMLLq3rccl6IsX/view?usp=sharing){.recurso .propio .video}
+
 :::
 :::
 
@@ -235,6 +193,8 @@ Esto es lo que realizamos en los recursos que proponemos en esta sección
 -   [Apunte de matriz métrica, transcripción del
     video.](https://campus.fi.uba.ar/mod/resource/view.php?id=202309){.recurso
     .propio}
+- [Grabación 18 de Mayo](https://drive.google.com/file/d/1Ymo1k6GVZuzvA0b2yG4yzao5QYXNYVvE/view?usp=sharing)
+
 :::
 :::
 
@@ -279,6 +239,24 @@ utilizado y las transformaciones de coordenadas incluidas, se pueden encontrar
 [en el video de clase](https://campus.fi.uba.ar/mod/url/view.php?id=229208){.recurso .propio .video},
 Aunque también hay mucha información en la sección
 [de tutoriales sobre datos geográficos](https://campus.fi.uba.ar/course/view.php?id=1093&section=5){.recurso .propio}
+
+
+Además del material teórico, que pueden consultar en la sección correspondiente. Trabajamos con
+un ejercicio práctico a partir de la información de cartas topográficas con información referida
+a Campo Inchauspe '69, y con datos de un modelo de terreno referido a WGS84, que es compatible
+con ITRF y por lo tanto con POSGAR07.
+
+Para este ejercicio, además de lo mencionado arriba, hay un video:
+
+- El [video de clase](https://campus.fi.uba.ar/mod/url/view.php?id=229215){.recurso .propio .video} aclarando el proceso de obtención de las coordenadas utilizando QGIS.
+
+El caso mas importante del TP es el segundo ejercicio, la trasformación tridimensional.
+En este caso, es indispensable hacer correctamente la transformación desde el sistema proyectado
+hacia las coordenadas geográficas, y desde las coordenadas geográficas hacia el sistema cartesiano,
+teniendo siempre en cuenta el elipsoide y el marco de referencia utilizado para generar el dato.
+
+Tal como lo veremos en clase, los pasos de la transformación se pueden ver en Qgis por ejemplo cuando para campo inchauspe propone varias transformaciones utilizando el formato de "pipelines" de la librería proj. Es de sumo interés ver como ejemplo lo que dice la misma documentación de la librería,
+[en este link](https://proj-tmp.readthedocs.io/en/6.2/usage/transformation.html#transformation){.recurso .externo}
 
 :::
 :::
