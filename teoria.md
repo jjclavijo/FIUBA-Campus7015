@@ -8,31 +8,31 @@
 ::: {.tema-cuerpo}
 El material de la primera clase es variado.
 
-En primer lugar está el video [Tema 1 - Parametros Coordenadas y
-Escala](https://campus.fi.uba.ar/mod/url/view.php?id=189752){.recurso
-.propio}, que desarrolla la idea de paramertización del espacio como
-base para la representación. En suma, plantea la cartografía matemática
-como la creación de parametrizaciones de los espacios reográfico y de
-representación \--papel\--, construyendo sistemas de coordenadas nuevos
-en cada uno , para luego aplicar estos sistemas entre sí.
+En primer lugar está el video [Parametros Coordenadas y
+Escala](https://campusgrado.fi.uba.ar/mod/url/view.php?id=25747){.recurso
+.propio .video}, que desarrolla la idea de paramertización del espacio como
+base para la representación. En suma, plantea la cartografía matemática como la
+creación de parametrizaciones de los espacios geográfico y de representación
+\--papel\--, construyendo sistemas de coordenadas nuevos en cada uno , para
+luego aplicar estos sistemas entre sí.
 
 En segundo lugar, el material escrito es:
 
 1.  \- Apunte
-    [Tema1_TierrayCarta](https://campus.fi.uba.ar/mod/resource/view.php?id=189788){.recurso
+    [Tema1_TierrayCarta](https://campusgrado.fi.uba.ar/mod/resource/view.php?id=25758){.recurso
     .propio}, que hace una introducción resaltando cual es el principal
     problema de la carta, es decir, que la tierra no es desarrollable
     sobre el plano.
 2.  \- Apunte
-    [Tema1_Notas](https://campus.fi.uba.ar/mod/resource/view.php?id=189787){.recurso
+    [Tema1_Notas](https://campusgrado.fi.uba.ar/mod/resource/view.php?id=25757){.recurso
     .propio}, que es un apoyo a lo expuesto en el video, y incluye unos
     ejercicios finales que son sólo sugerencias para fijar los
     contenidos.
-3.  \- Apunte
-    [Tema1_EckertIntro](https://campus.fi.uba.ar/mod/resource/view.php?id=189789){.recurso
-    .externo}, que es tomado de un libro que trata el tema de la grilla
-    de meridianos y paralelos que se genera para una carta en forma
-    simple, y sirve para presentar algunos ejemplos y gráficos útiles.
+3.  \- Apunte [Extracto del libro \"Cartografía\" de Max Eckert, Edición de la
+    UNAM](https://campusgrado.fi.uba.ar/mod/resource/view.php?id=25759){.recurso
+    .externo}, que es tomado de un libro que trata el tema de la grilla de
+    meridianos y paralelos que se genera para una carta en forma simple, y sirve
+    para presentar algunos ejemplos y gráficos útiles.
 :::
 :::
 
@@ -51,11 +51,22 @@ ejercicios.
 El material de base consta de:
 
 1.  un video: [Tema 2 - Lineas coordenadas y Bases
-    Vectoriales](https://campus.fi.uba.ar/mod/url/view.php?id=189753){.recurso
-    .propio .video}
+    Vectoriales](https://campusgrado.fi.uba.ar/mod/url/view.php?id=25748){
+    .recurso .propio .video}
 2.  un apunte escrito: [Tema2 Vectores Base y
-    Métrica](https://campus.fi.uba.ar/mod/resource/view.php?id=189791){.recurso
-    .propio}
+    Métrica](https://campusgrado.fi.uba.ar/mod/resource/view.php?id=25760){
+    .recurso .propio}
+
+Como referencia también pueden consultar [este apunte de Norbert
+Rösch](https://campusgrado.fi.uba.ar/mod/resource/view.php?id=115832){.recurso
+.externo}, que está en inglés. El autor es profesor del Karlsruher
+Institut für Technologie. La forma en la que explica las cosas se parece
+bastante a la metodología que usamos en clase, tengan presente si lo
+leen que en la notación cuando aparece du, dv, etc se está refiriendo a
+las normas de los vectores base u y v por ejemplo. Este apunte puede
+servir de nexo entre la notación que proponemos en clase y notaciones
+más tradicionales como la del apunte de Starobinsky que está en la
+sección que sigue.
 
 El material extra (menos editado) es:
 
@@ -63,16 +74,15 @@ El material extra (menos editado) es:
 27/09/2021](https://drive.google.com/file/d/1JGxHq-_jqM9I91A8b4_mxRKfdbSelwEd/view){.recurso
 .propio .video} y el borrador de las figuras que se realizaron en esa
 clase [que se encuentra adjunto en la sección de material
-teórico](https://campus.fi.uba.ar/mod/resource/view.php?id=221192){.recurso
+teórico](https://campusgrado.fi.uba.ar/mod/resource/view.php?id=25778){.recurso
 .propio}
 
 [Una](https://drive.google.com/file/d/15IbdxMgtgebZCsgsQfPhzi4OtSmAoW9A/view){.recurso
 .propio .video} y
 [Otra](https://drive.google.com/file/d/19Xark1eqZPvUp5kYqQ9QEdedPjeaCuJy/view){.recurso
-.propio .video} grabaciones de la clase del martes 5/10/2021, y el borrador
-de las figuras que se realizaron en esa clase [que se encuentra adjunto
-en la sección de material
-teórico](https://campus.fi.uba.ar/mod/resource/view.php?id=223989){.recurso
+.propio .video} grabaciones de la clase del martes 5/10/2021, y el [borrador de
+las figuras que se realizaron en esa
+clase](https://campusgrado.fi.uba.ar/mod/resource/view.php?id=25779){.recurso
 .propio}
 
 Verán que en esta ultima clase se propuso una actividad para realizar en excel,
@@ -101,38 +111,33 @@ condiciones que caracterizan a cada sistema de representación, de manera
 que podamos realizar un desarrollo ordenado para las mismas, partiendo
 de condiciones y llegando a expresiones. Este segundo punto es el objeto
 de la [Actividad
-2](https://campus.fi.uba.ar/course/view.php?id=1093&section=14){.actividad}
+2](https://campusgrado.fi.uba.ar/course/view.php?id=194&section=14){.actividad}
 
-El material propio del curso para esta sección consiste en dos videos,
+El material propio del curso para esta sección consiste en tres videos,
 donde el enfoque está centrado en las llamadas **proyecciones con figura
 auxiliar**
 
 -   \- [Video 2020 1er
-    Cuatrimestre](https://campus.fi.uba.ar/mod/url/view.php?id=195500){.recurso
+    Cuatrimestre](https://campusgrado.fi.uba.ar/mod/url/view.php?id=25749){.recurso
     .propio .video}
 -   \- [Video 2020 2do
-    Cuatrimestre](https://campus.fi.uba.ar/mod/url/view.php?id=196122){.recurso
+    Cuatrimestre](https://campusgrado.fi.uba.ar/mod/url/view.php?id=25750){.recurso
     .propio .video}
-
-Y dos lecturas cortas:
-
--   [Ejemplo de desarrollo de una
-    proyección](https://campus.fi.uba.ar/mod/resource/view.php?id=194205){.recurso
-    .propio}
--   [Disparadores para el trahajo con
-    proyecciones](https://campus.fi.uba.ar/pluginfile.php/355128/mod_resource/content/1/disparadores.html){.recurso
-    .propio}
+-   \- [Aclaraciónes Tipicas sobre el desarrollo de proyecciones con
+    figura
+    auxiliar](https://campusgrado.fi.uba.ar/mod/resource/view.php?id=115837){.recurso
+    .propio .video}
 
 El material de fuentes externas, con desarrollos diversos, consta de
 tres apuntes, cada uno con su estilo, todos son interesantes de
 analizar.
 
 -   El apunte
-    [Tema3_Starobinsky_RepresentacionesCartográficas](https://campus.fi.uba.ar/mod/resource/view.php?id=189793){.recurso
+    [de Miguel Starobinsky: Representaciones Cartográficas](https://campusgrado.fi.uba.ar/mod/resource/view.php?id=25762){.recurso
     .externo}, del Ing. Miguel Starobinsky, donde la sección relevante
     son las páginas 37-97 (desarrollo de proyecciones en la esfera).
 -   El apunte de proyecciones cartográficas [De Carlos A.
-    Furuti](https://campus.fi.uba.ar/mod/resource/view.php?id=194190){.recurso
+    Furuti](https://campusgrado.fi.uba.ar/mod/resource/view.php?id=25763){.recurso
     .externo}, Que es un material muy recomendable, y tiene también una
     sección de desarrollos de proyecciones, entre las páginas 53 y 81.
 -   La [Lista de proyecciones
@@ -140,18 +145,21 @@ analizar.
     .externo} de Wikipedia, Muchas de las cuales tienen su desarrollo
     incluido.
 
+
 Además de este material teórico, tenemos los siguientes ejemplos más prácticos
 de desarrollo:
 
 - [Desarrollo Proyección Kavrainsky](https://drive.google.com/file/d/1UWoFQAa2ASB2in3A9aqtcR9xFuV4aeVm/view?usp=sharing)
 - [Aclaraciónes sobre proyección cilíndrica equivalente](https://drive.google.com/file/d/14T62AaePPnk8ArRv57WHZdxbljNqBodw/view?usp=sharing)
-- [Ejemplo: Desarrollo de la proyección Equivalente Cuartica](https://campus.fi.uba.ar/mod/resource/view.php?id=189792)
+- [Ejemplo: Desarrollo de la proyección Equivalente Cuartica](https://campusgrado.fi.uba.ar/mod/resource/view.php?id=25761)
 
 Y podemos trabajar con la proyección de mercator haciendo algunas cuentas para
 verificar sus propiedades a partir de operar con triángulos esféricos suficientemente pequeños:
 
-- [Ejemplo: Ploteo de línea Loxodrómica sobre Mercator](https://campus.fi.uba.ar/mod/resource/view.php?id=225738)
-- [Ejemplo: Conformidad con triángulos esféricos sobre Mercator](https://campus.fi.uba.ar/mod/resource/view.php?id=225743)
+-   [Ejemplo: Ploteo de línea Loxodrómica sobre
+    Mercator](https://campusgrado.fi.uba.ar/mod/resource/view.php?id=25780)
+-   [Ejemplo: Conformidad con triángulos esféricos sobre
+    Mercator](https://campusgrado.fi.uba.ar/mod/resource/view.php?id=25781)
 
 También podemos analizar el caso de una proyección cuya construcción es geométrica,
 pero tiene un parámetro que puede variar (de Braun). En este caso, veremos como, según
@@ -160,7 +168,8 @@ Es interesante que revisen este ejemplo, y piensen cómo se expresan las magnitu
 que se trabajan en las planillas utilizando la notación de vectores base que usamos en la
 teoría, y cómo esto sirve para comparar las proyecciones.
 
-- [Comparación Mercator Braun](https://campus.fi.uba.ar/mod/folder/view.php?id=225748)
+-   [Comparación Mercator
+    Braun](https://campusgrado.fi.uba.ar/mod/folder/view.php?id=25782)
 
 Además contamos con un video con respuestas a algunas dudas que surgieron en
 otro cuatrimestre sobre desarrollos puntuales, que pueden servir de ejemplo en
@@ -185,15 +194,34 @@ Es interesante considerar la metrica del sistema de coordenadas
 \$\$\\hat{\\varphi},\\hat{\\lambda}\$\$, es decir de la latitud y la
 longitud como coordenadas del espacio representado plano.
 
-Esto es lo que realizamos en los recursos que proponemos en esta sección
 
 -   [Clase de matriz métrica en
-    video.](https://campus.fi.uba.ar/mod/url/view.php?id=202306){.recurso
+    video.](https://campusgrado.fi.uba.ar/mod/url/view.php?id=25774){.recurso
     .propio .video}
 -   [Apunte de matriz métrica, transcripción del
-    video.](https://campus.fi.uba.ar/mod/resource/view.php?id=202309){.recurso
+    video.](https://campusgrado.fi.uba.ar/mod/resource/view.php?id=25775){.recurso
     .propio}
-- [Grabación 18 de Mayo](https://drive.google.com/file/d/1Ymo1k6GVZuzvA0b2yG4yzao5QYXNYVvE/view?usp=sharing)
+-   [Grabación 18 de Mayo
+    2021](https://drive.google.com/file/d/1Ymo1k6GVZuzvA0b2yG4yzao5QYXNYVvE/view?usp=sharing){.recurso
+    .propio .video}
+
+Podrán ver que esto este tema está muy relacionado a la Descomposición
+en valores singulares de una matriz. Por eso les proponemos algunos
+recursos externos sobre el tema que pueden explorar:
+
+-   [Video en Youtube: ¿Qué es la SVD?]{#que_es_svd .recurso .externo
+    .video}
+-   [Video en Youtube: SVD Visualizada]{#svd_visualizada .recurso
+    .externo .video}
+-   [Apunte de la UNLP sobre SVD (en
+    castellano)](https://www.mate.unlp.edu.ar/practicas/70_18_0911201012951.pdf){.recurso
+    .externo}
+-   [Apunte de la Universidad Politecnica de Valencia sobre SVD (en
+    castellano)](http://personales.upv.es/asala/DocenciaOnline/material/SVDf.pdf){.recurso
+    .externo}
+-   [Libro de algebra, ver Capitulo 7 sobre
+    SVD](https://understandinglinearalgebra.org/chap7.html){.recurso
+    .externo}
 
 :::
 :::
@@ -216,13 +244,13 @@ dentro de los mismos.
 El material de trabajo consiste en:
 
 -   [Un apunte
-    teórico](https://campus.fi.uba.ar/mod/resource/view.php?id=189794){.recurso
+    teórico](https://campusgrado.fi.uba.ar/mod/resource/view.php?id=25764){.recurso
     .propio}
--   [Una Clase en
-    Video (2020)](https://campus.fi.uba.ar/mod/url/view.php?id=189772){.recurso
+-   [Una Clase en Video
+    (2020)](https://campusgrado.fi.uba.ar/mod/url/view.php?id=25752){.recurso
     .propio .video}
--   [Una Clase en
-    Video (2021)](https://campus.fi.uba.ar/mod/url/view.php?id=229203){.recurso
+-   [Una Clase en Video
+    (2021)](https://campusgrado.fi.uba.ar/mod/url/view.php?id=25783){.recurso
     .propio .video}
 
 Es importante que reconozcan las diferencias conceptuales entre marcos y
@@ -235,11 +263,13 @@ con datos en el marco Campo Inchauspe 69, y en el marco WGS84,
 compatible con ITRF, y por ende con POSGAR07.
 
 Para ayuda en la actividad, alguno temas básicos sobre el tipo de datos
-utilizado y las transformaciones de coordenadas incluidas, se pueden encontrar
-[en el video de clase](https://campus.fi.uba.ar/mod/url/view.php?id=229208){.recurso .propio .video},
-Aunque también hay mucha información en la sección
-[de tutoriales sobre datos geográficos](https://campus.fi.uba.ar/course/view.php?id=1093&section=5){.recurso .propio}
-
+utilizado y las transformaciones de coordenadas incluidas, se pueden
+encontrar [en el video de
+clase](https://campusgrado.fi.uba.ar/mod/url/view.php?id=25784){.recurso
+.propio .video}, Aunque también hay mucha información en la sección [de
+tutoriales sobre datos
+geográficos](https://campusgrado.fi.uba.ar/course/view.php?id=194&section=5){.recurso
+.propio}
 
 Además del material teórico, que pueden consultar en la sección correspondiente. Trabajamos con
 un ejercicio práctico a partir de la información de cartas topográficas con información referida
@@ -248,7 +278,7 @@ con ITRF y por lo tanto con POSGAR07.
 
 Para este ejercicio, además de lo mencionado arriba, hay un video:
 
-- El [video de clase](https://campus.fi.uba.ar/mod/url/view.php?id=229215){.recurso .propio .video} aclarando el proceso de obtención de las coordenadas utilizando QGIS.
+- El [video de clase](https://campusgrado.fi.uba.ar/mod/url/view.php?id=25727){.recurso .propio .video} aclarando el proceso de obtención de las coordenadas utilizando QGIS.
 
 El caso mas importante del TP es el segundo ejercicio, la trasformación tridimensional.
 En este caso, es indispensable hacer correctamente la transformación desde el sistema proyectado
@@ -267,19 +297,20 @@ Tal como lo veremos en clase, los pasos de la transformación se pueden ver en Q
 
 ::: {.collapsible}
 ::: {.tema-cuerpo}
+
 Los conceptos de cartografía temática son menos exactos que los de la
 cartografía matemática. Distintos autores proponen distintos esquemas
 para analizar la forma en la que la información se comunica a través de
 un mapa, en lo que se conoce como semiología gráfica
 
 En primer lugar trabajaremos con [una clase en
-video](https://campus.fi.uba.ar/mod/url/view.php?id=189774){.recurso
+video](https://campusgrado.fi.uba.ar/mod/url/view.php?id=25754){.recurso
 .propio .video}, donde además de introducir los conceptos se hace una
 pequeña revisión de la bibliografía disponible.
 
 El material de trabajo escrito es diverso, y recomendamos abordarlo
 teniendo en cuanta [el póster en formato
-PDF](https://campus.fi.uba.ar/mod/resource/view.php?id=189797){.recurso
+PDF](https://campusgrado.fi.uba.ar/mod/resource/view.php?id=25765){.recurso
 .propio}, donde están enumerados los objetivos de aprendizaje que
 tenemos para este tema, junto con varios recursos para consulta.
 
@@ -291,13 +322,13 @@ manera:
 -   Recorrer a conciencia los recursos propuestos en el poster.
 -   Dar una hojeada a la bibliografía que dejamos en [Bibliografía -
     Cartografía
-    Temática](https://campus.fi.uba.ar/mod/folder/view.php?id=163447){.recurso
+    Temática](https://campusgrado.fi.uba.ar/mod/folder/view.php?id=25766){.recurso
     .externo}.
 -   Realizar la Actividad inicial de Carta temática, para fijar el
     contenido aprendido
 
 Finalmente, hay un video con [ejemplos de
-cartas](https://campus.fi.uba.ar/mod/url/view.php?id=189775){.recurso
+cartas](https://campusgrado.fi.uba.ar/mod/url/view.php?id=25755){.recurso
 .propio .video}, donde se hace un análisis de casos, para tener una idea
 práctica del tema.
 
@@ -361,18 +392,18 @@ coordenadas elipsoidales o geodésicas.
 El material de trabajo para este tema consiste en:
 
 -   [Un video de la clase
-    introductoria.](https://campus.fi.uba.ar/mod/url/view.php?id=189776){.recurso
+    introductoria.](https://campusgrado.fi.uba.ar/mod/url/view.php?id=25756){.recurso
     .propio .video}
 -   [Un video sobre desarrollo de proyecciónes en el
-    elipsoide.](https://campus.fi.uba.ar/mod/url/view.php?id=205534){.recurso
+    elipsoide.](https://campusgrado.fi.uba.ar/mod/url/view.php?id=25776){.recurso
     .propio .video}
 -   El apunte [de geometría del
-    elipsoide](https://campus.fi.uba.ar/mod/resource/view.php?id=189799){.recurso
+    elipsoide](https://campusgrado.fi.uba.ar/mod/resource/view.php?id=25767){.recurso
     .propio} donde se desarrolla lo escencial sobre coordenadas
     elipsoidales, incluyendo la solución de los problemas necesarios
     para dar valor numérico a las mismas.
 -   El apunte [Sobre el Teorema de
-    Meusnier](https://campus.fi.uba.ar/mod/resource/view.php?id=189801){.recurso
+    Meusnier](https://campusgrado.fi.uba.ar/mod/resource/view.php?id=25768){.recurso
     .externo}, donde se explica el desarrollo de dicho teorema, que, si
     bien no es indispensable conocer su demostración, sí es un resultado
     escencial al resto del desarrollo del tema, que permite relacionar
@@ -381,12 +412,12 @@ El material de trabajo para este tema consiste en:
     primer apunte, pero tocan algunos temas más, que son de interés,
     aunque van más allá de lo requerido por la materia:
     -   El apunte [de Christofer
-        Jekeli](https://campus.fi.uba.ar/mod/resource/view.php?id=189803){.recurso
+        Jekeli](https://campusgrado.fi.uba.ar/mod/resource/view.php?id=25769){.recurso
         .externo}
     -   El apunte [de Kai
-        Borre](https://campus.fi.uba.ar/mod/resource/view.php?id=189804){.recurso
+        Borre](https://campusgrado.fi.uba.ar/mod/resource/view.php?id=25770){.recurso
         .externo}
--
+
 :::
 :::
 
@@ -411,19 +442,19 @@ El material de trabajo para este tema consiste en:
     clase](https://drive.google.com/file/d/11Sp6tF8vZA7WgcBgnjsBeayDYIahdIsH/view?usp=sharing){.recurso
     .propio .video} de Gauss-Kruger en Febrero 2021.
 -   El apunte [De desarrollo de la
-    proyección](https://campus.fi.uba.ar/mod/resource/view.php?id=189805){.recurso
+    proyección](https://campusgrado.fi.uba.ar/mod/resource/view.php?id=25771){.recurso
     .propio} donde se desarrollan las ecuaciones para la proyección
     incluyendo también el cálculo de deformación. El método seguido es
     el que se toma normalmente como oficial para la argentina, basado en
     el desarrollo en serie de taylor partiendo de Meridiano Central de
     Faja.
 -   El apunte [de formulas de Redfearn
-    1948](https://campus.fi.uba.ar/mod/resource/view.php?id=189806){.recurso
+    1948](https://campusgrado.fi.uba.ar/mod/resource/view.php?id=25772){.recurso
     .externo}, donde están las ecuaciones de la proyección en su primer
     desarrollo completo publicado, que normalmente se toma como
     referencia.
 -   La planilla [Utilizada en
-    clase](https://campus.fi.uba.ar/mod/resource/view.php?id=211170){.recurso
+    clase](https://campusgrado.fi.uba.ar/mod/resource/view.php?id=25777){.recurso
     .externo}, donde pueden experimentar con las ecuaciones de la
     proyección e investigar la influencia de cada término en el
     resultado.
@@ -440,11 +471,11 @@ Parte del material de esta sección no lo asignamos a ninguna clase en
 particular.
 
 -   El archivo [Guia de
-    Ejercicios](https://campus.fi.uba.ar/mod/resource/view.php?id=189785){.recurso
+    Ejercicios](https://campusgrado.fi.uba.ar/mod/resource/view.php?id=25745){.recurso
     .propio} es una guía de ejercicios que surgieron de exámenes
     parciales de años anteriores.
 -   El archivo [Pautas para la Elaboración de
-    Informes](https://campus.fi.uba.ar/mod/resource/view.php?id=189786){.recurso
+    Informes](https://campusgrado.fi.uba.ar/mod/resource/view.php?id=25746){.recurso
     .propio} es un documento general, orientado a ayudarlos en la
     redacción de informes. Les pedimos que lo tengan en cuenta a la hora
     de realizar las entregas de la materia.

@@ -45,19 +45,19 @@
     }
 
     #iteoria a.recurso {
-      border: dashed 1px gray;
+      border: dashed 2px gray;
     }
 
     #iteoria a.propio {
-      background: #d3a747;
-    }
-
-    #iteoria a.externo {
       background: #74d347;
     }
 
+    #iteoria a.externo {
+      background: #d3a747;
+    }
+
     #iteoria a.video {
-      border: solid 1px #4774d3;
+      border: solid 2px #4774d3;
     }
 
     #iteoria a {
