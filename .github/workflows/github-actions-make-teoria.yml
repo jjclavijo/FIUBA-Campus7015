@@ -15,3 +15,9 @@ jobs:
    - uses: nikeee/setup-pandoc@v1
    - name: build page
      run: make teoria.html
+
+   - name: Upload artifacts
+   - uses: actions/upload-artifact@v3
+     with:
+       name: teoria
+       path: teoria.html
