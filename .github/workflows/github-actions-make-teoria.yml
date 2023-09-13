@@ -12,6 +12,6 @@ jobs:
    steps:
    - name: checkout repo
      uses: actions/checkout@main
+   - uses: nikeee/setup-pandoc@v1
    - name: build page
-     uses: nikeee/setup-pandoc@v1
      run: make teoria.html
