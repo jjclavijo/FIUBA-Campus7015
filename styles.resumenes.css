@@ -1,0 +1,152 @@
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@600&family=Oxygen:wght@300;400&display=swap');
+
+    #cronograma tr {
+      }
+
+    #iresumenes {
+      line-height: 1.7;
+      font-family: 'Oxygen', sans-serif;
+      font-size: 20px;
+      font-weight: 300;
+			color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    #iresumenes {
+      margin: 0 auto;
+      hyphens: auto;
+      word-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      #iresumenes {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+    }
+    @media print {
+      #iresumenes {
+        background-color: transparent;
+        color: black;
+      }
+      #iresumenes p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      #iresumenes h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    #iresumenes p {
+      margin-top: 1.7em;
+    }
+    #iresumenes a {
+      color: #1a1a1a;
+    }
+
+    #iresumenes a.recurso {
+      border: dashed 2px gray;
+    }
+
+    #iresumenes a.propio {
+      background: #74d347;
+    }
+
+    #iresumenes a.externo {
+      background: #d3a747;
+    }
+
+    #iresumenes a.video {
+      border: solid 2px #4774d3;
+    }
+
+    #iresumenes a {
+      color: #1a1a1a;
+    }
+
+    #iresumenes a:visited {
+      color: #1a1a1a;
+    }
+    #iresumenes img {
+      max-width: 100%;
+    }
+    #iresumenes h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.7em;
+      font-family: 'Montserrat Alternates', sans-serif;
+    }
+    #iresumenes ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1.7em;
+    }
+    #iresumenes li > ol, li > ul {
+      margin-top: 0;
+    }
+    #iresumenes blockquote {
+      margin: 1.7em 0 1.7em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      font-style: italic;
+    }
+    #iresumenes hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin-top: 1.7em;
+    }
+    #iresumenes table {
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+    }
+    #iresumenes th, td {
+      border-bottom: 1px solid lightgray;
+      padding: 0.4em 0.7em 0.4em 0;
+    }
+    #iresumenes header {
+      margin-bottom: 6em;
+      text-align: center;
+    }
+    #iresumenes nav a:not(:hover) {
+      text-decoration: none;
+    }
+    #iresumenes code{white-space: pre-wrap;}
+    #iresumenes span.smallcaps{font-variant: small-caps;}
+    #iresumenes span.underline{text-decoration: underline;}
+    #iresumenes div.column{display: inline-block; vertical-align: top; width: 50%;}
+    #iresumenes div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    #iresumenes ul.task-list{list-style: none;}
+    #iresumenes {
+    font-size: 1rem
+    }
+    #iresumenes .tema {
+    font-size: 1.7rem;
+    font-family: 'Montserrat Alternates', sans-serif;
+    border-top: dashed 1px;
+    border-bottom: solid 1px;
+    padding: 1em;
+    padding-bottom: 0.3em;
+    }
+    #iresumenes .tema p {
+    font-size: 1.7rem;
+    font-family: 'Montserrat Alternates', sans-serif;
+    padding: 0em;
+    margin: 0em;
+    }
+    div.collapsible > input + * {
+     display: none;
+    }
+     
+    div.collapsible > input:checked + * {
+     display: block;
+    }
+
+    div.collapsible > input {
+     display: none;
+    }
+
+    .tema label {
+     cursor: pointer;
+     font-size: 1rem;
+     background: #dddddd;
+    }
