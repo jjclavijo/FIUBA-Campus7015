@@ -18,6 +18,9 @@ teoria.html: teoria.md.m4 styles.css
 resumenes.html: resumenes.md.m4 styles.css
 	m4 -DxNAME="resumenes" -DxFILE="resumenes.md.m4" template.html.m4 > $@
 
+trabajos.html: trabajos.md.m4 styles.css
+	m4 -DxNAME="trabajos" -DxFILE="trabajos.md.m4" template.html.m4 > $@
+
 %.js: %.html
 	echo "document.getElementsByClassName('fa-code')[0].parentElement.click();" > $@
 	echo -n "document.getElementsByTagName('textarea')[0].value = \`" >> $@
@@ -35,9 +38,14 @@ resumenes.md.m4: resumenes.md
 	cp start.md.m4 $@
 	sed -E '{N;/.+\n.+\n.+/b sigue;N;:sigue /:::.*\n.*\n:::.*collapsible/b para;P;D};:para {s/:::\s+::: \{.collapsible\}$$/xCOL/}' resumenes.md >> $@
 
+trabajos.md.m4: trabajos.md
+	cp start.md.m4 $@
+	sed -E '{N;/.+\n.+\n.+/b sigue;N;:sigue /:::.*\n.*\n:::.*collapsible/b para;P;D};:para {s/:::\s+::: \{.collapsible\}$$/xCOL/}' trabajos.md >> $@
+
 %.html: %.md styles.%.css
 	m4 -DxNAME="$*" -DxFILE="$*.md" template.html.m4 > $@
 
 clean:
 	@rm -rf teoria.md.m4 teoria.html teoria.js portada.html
 	@rm -rf resumenes.md.m4 resumenes.html resumenes.js
+	@rm -rf trabajos.md.m4 trabajos.html trabajos.js

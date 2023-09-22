@@ -1,0 +1,158 @@
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@600&family=Oxygen:wght@300;400&display=swap');
+
+    #cronograma tr {
+      }
+
+    #itrabajos {
+      line-height: 1.7;
+      font-family: 'Oxygen', sans-serif;
+      font-size: 20px;
+      font-weight: 300;
+			color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    #itrabajos {
+      margin: 0 auto;
+      hyphens: auto;
+      word-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      #itrabajos {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+    }
+    @media print {
+      #itrabajos {
+        background-color: transparent;
+        color: black;
+      }
+      #itrabajos p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      #itrabajos h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    #itrabajos p {
+      margin-top: 1.7em;
+    }
+    #itrabajos a {
+      color: #1a1a1a;
+    }
+
+    #itrabajos a.recurso {
+      border: dashed 2px gray;
+    }
+
+    #itrabajos a.propio {
+      background: #74d347;
+    }
+
+    #itrabajos a.externo {
+      background: #d3a747;
+    }
+
+    #itrabajos a.video {
+      border: solid 2px #4774d3;
+    }
+
+    #itrabajos a {
+      color: #1a1a1a;
+    }
+
+    #itrabajos a:visited {
+      color: #1a1a1a;
+    }
+    #itrabajos img {
+      max-width: 100%;
+    }
+    #itrabajos h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.7em;
+      font-family: 'Montserrat Alternates', sans-serif;
+    }
+    #itrabajos ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1.7em;
+    }
+    #itrabajos li > ol, li > ul {
+      margin-top: 0;
+    }
+    #itrabajos blockquote {
+      margin: 1.7em 0 1.7em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      font-style: italic;
+    }
+    #itrabajos hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin-top: 1.7em;
+    }
+    #itrabajos table {
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+    }
+    #itrabajos th, td {
+      border-bottom: 1px solid lightgray;
+      padding: 0.4em 0.7em 0.4em 0;
+    }
+    #itrabajos header {
+      margin-bottom: 6em;
+      text-align: center;
+    }
+    #itrabajos nav a:not(:hover) {
+      text-decoration: none;
+    }
+    #itrabajos code{white-space: pre-wrap;}
+    #itrabajos span.smallcaps{font-variant: small-caps;}
+    #itrabajos span.underline{text-decoration: underline;}
+    #itrabajos div.column{display: inline-block; vertical-align: top; width: 50%;}
+    #itrabajos div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    #itrabajos ul.task-list{list-style: none;}
+    #itrabajos {
+    font-size: 1rem
+    }
+    #itrabajos .tema {
+    font-size: 1.7rem;
+    font-family: 'Montserrat Alternates', sans-serif;
+    border-top: dashed 1px;
+    border-bottom: solid 1px;
+    padding: 1em;
+    padding-bottom: 0.3em;
+    }
+    #itrabajos .tema p {
+    font-size: 1.7rem;
+    font-family: 'Montserrat Alternates', sans-serif;
+    padding: 0em;
+    margin: 0em;
+    }
+    div.collapsible > input + * {
+     display: none;
+    }
+     
+    div.collapsible > input:checked + * {
+     display: block;
+    }
+
+    div.collapsible > input {
+     display: none;
+    }
+
+    .tema label {
+     cursor: pointer;
+     font-size: 1rem;
+     background: #dddddd;
+    }
+
+    #itrabajos .nota p {
+    font-size: 0.9rem;
+    padding: 1em;
+    }
+
