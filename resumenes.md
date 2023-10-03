@@ -39,7 +39,10 @@ Como ejercicios prácticos en esta clase trabajamos con:
 
 Si bien esta clase es introductoria, como material de apoyo puede usarse lo que está en la sección #1 de la pestaña "material teórico" del campus. (aunque está mas enfocado en las parametrizaciones que en el concepto de coordenada)
 
-También cualquier material que hable sobre el espacio tangente a una superficie parametrizada engloba un poco lo que vimos en esta clase. (porque van a aparecer los conceptos de coordenadas, parametrización, espacio tangente, etc). Me resultaron en este caso muy interesantes algunos videos sobre formas diferenciales, como este: https://www.youtube.com/watch?v=PaWj0WxUxGg&list=PL22w63XsKjqzQZtDZO_9s2HEMRJnaOTX7
+También cualquier material que hable sobre el espacio tangente a una superficie parametrizada engloba un poco lo que vimos en esta clase. (porque van a aparecer los conceptos de coordenadas, parametrización, espacio tangente, etc). Me resultaron en este caso muy interesantes algunos videos sobre formas diferenciales, como este:
+
+- https://www.youtube.com/watch?v=PaWj0WxUxGg&list=PL22w63XsKjqzQZtDZO_9s2HEMRJnaOTX7
+
 En su momento, el material que me hizo pensar en dar esta clase de esta forma fue el libro "Vector Calculus, Linear Algebra, and Differential Forms: A Unified Approach" de Hubbrad.
 
 
@@ -90,7 +93,7 @@ En la primera repasamos en general lo que habíamos visto hasta la fecha.
 
 ## Apilar trapecios
 
-En una segunda parte resolvimos el ejercicio de "mercator por definición", dibujamos en el pizarrón el "apilado" de los trapecios que se forman con la partición, cómo se escalan para ocupar el espacio, etc. ( El ejemplo en un notebook para experimentar en colab lo pueden ver acá: https://gist.github.com/jjclavijo/1397f44c00340d2f4db1052baa0e4c5d )
+En una segunda parte resolvimos el ejercicio de "mercator por definición", dibujamos en el pizarrón el "apilado" de los trapecios que se forman con la partición, cómo se escalan para ocupar el espacio, etc. ( [El ejemplo en un notebook para experimentar en colab lo pueden ver acá:](https://gist.github.com/jjclavijo/1397f44c00340d2f4db1052baa0e4c5d) )
 
 Quedó planteado como posible ejercicio hacer lo mismo pero partiendo el espacio diréctamente a partir de las coordenadas cartesianas de R3 y no de las coordenadas esféricas.
 
@@ -118,8 +121,10 @@ del terreno.
 
 Esto incluyó tanto coordenadas geográficas como coordenadas pixel.
 
-Pronto dejaré acá el guión original que había preparado para la clase con material
-para ejercicios.
+El contenido de esta clase puede repasarse con estos ejercicios:
+
+- [Enunciados de ejemplo](https://campusgrado.fi.uba.ar/mod/resource/view.php?id=117522)
+- [Archivos auxiliares](https://campusgrado.fi.uba.ar/mod/folder/view.php?id=117521)
 
 :::
 :::
@@ -159,6 +164,107 @@ Temas importantes para repasar a esta altura:
 1. Calcular vectores base de esfericas y polares. **Todos los días. **
 2. Para poder avanzar la clase que viene: ¿por que la norma de fi es R en el circulo? Y ¿por qué si defino fi con la normal a la curva la norma tambien es el radio de curvatura aunque no sea constante?
 
+:::
+:::
+
+::: {.tema}
+\#6: Curvatura, Dudas sobre desarrollos de proyecciones 26-Sep-2023
+:::
+
+::: {.collapsible}
+::: {.tema-cuerpo}
+
+En la clase comenzamos por resolver dudas sobre el desarrollo del TP1 y desarrollo
+de proyecciones en general.
+
+Hablamos de:
+
+1. Proyección Conforme Cilíndrica Secante Normal: Vimos que es igual a Mercator
+   pero con un factor de escala aplicado. Resolvimos, con identidades trigonométricas,
+   cómo podía hacerse para igualar dos expresiones para la misma proyección:
+    - Comentario: En sympy se puede verificar si dos expresiones son la misma restándolas e igualándolas a 0.
+                  [Aquí un ejemplo de eso que pueden correr en colab](https://gist.github.com/jjclavijo/58814311e778548a4c4d92c93a15beb0)
+
+2. Proyección transversa de Mercator. Cómo se crea un sistema de coordenadas intermedias
+   que corresponde a una grilla de paralelos y meridianos rotados.
+
+# Curvatura
+
+Luego hablamos sobre curvatura.
+
+Primero recordamos la definición de la curvatura como relación de velocidades entre el
+ángulo de la tangente a una curva y el avance por el largo de dicha curva.
+
+Luego hicimos "en paralelo" dos distintos desarrollos relativos al concepto de curvatura.
+
+# Arco de elipse
+
+Por un lado hablamos de cómo calcular un arco de elipse si utilizamos la parametrización
+(y; x(y)), y cómo esto para el caso del círculo es lo mismo que el arcoseno. Además
+hablamos de la parametrización utilizando la normal a la curva (la latitud), y de cómo
+en el círculo nos es útil porque la torsión es constante y sabemos cómo elegir los
+límites de este tipo de integrales porque conocemos el valor de PI.
+
+Partiendo de esto planteamos como ejemplo calcular el valor de PI a partir del arco-seno.
+
+Hablamos de cómo el tipo de integrales que surgen pueden resolverse con desarrollos en serie.
+
+# Curvatura de una superficie.
+
+Por otro lado hablamos de cómo la curvatura en una superficie puede construirse
+en forma análoga a como construimos la torsión de una curva buscando el segundo
+término de la serie de taylor para la curva cuando trabajamos en el sistema de
+coordenadas del espacio tangente.
+
+En el caso de una superficie lo que obtenemos es un paraboloide (una forma
+cuadrática) que podemos decir que surge de transformar linealmente un paraboloide
+de rotación. En este sentido, la curvatura de la superficie queda descripta por
+una matriz que representa esa transformación que hablábamos. Esta mariz es la
+matriz hessiana cuando estamos en el sistema de coordenadas adecuado.
+
+Y aquí conectamos dos temas.
+
+## Teorema egregium
+
+Por un lado, el teorema egregium de gauss que dice que no puede hallarse un
+isomorfismo entre superficies con distintas curvaturas usa el termino curvatura
+para referirse al determinante de esta transformación lineal.
+
+## Curvaturas máxima y mínima.
+
+El hecho de que la curvatura quede descripta por esta transformación lineal nos
+hace pensar que habrá una curvatura máxima y otra mínima ortogonales entre sí,
+igual que pasaba con las direcciones fundamentales de una transformación.
+
+Vimos que esto es cierto, hablamos de que en el elipsoide forzosamente estas
+direcciones son la de los meridianos y una perpendicular a ella, y pusimos nombre
+a los radios de curvatura (torsión) de estas curvas planas, M y N.
+
+Hablamos de cómo M tiene forzosamente que ser el módulo de phi en el elispoide,
+por cómo se define la parametrización.
+
+
+## Ejemplo práctico 1: Geogebra
+
+Vimos unos ejemplos construidos por Tomás en Geogebra para ilustrar los radios
+de curvatura sobre una elipse (y sobre el elipsoide).
+
+- [Primer ejemplo](https://www.geogebra.org/calculator/z2jkgyjz)
+- [Segundo ejemplo](https://www.geogebra.org/calculator/vthaxgtm)
+
+## Ejemplo práctico 2: Calcular pi.
+
+Como ejemplo práctico intentamos que ChatGPT nos ayudara con código (en sympy
+o en máxima) a calcular el perímetro de la elipse o el valor de pi a partír de
+la definición del arcoseno como una integral.
+
+- Log de una sesión de ejemplo hasta lograr que ChatGPT de un código valido
+  y calcular pi. [Link](https://campusgrado.fi.uba.ar/mod/resource/view.php?id=117514)
+
+# Tarea para la clase siguiente
+
+Revisar el desarrollo de cálculo de M y arco de meridiano tal como está en el apunto
+de coordenadas sobre el elipsoide
 
 :::
 :::
