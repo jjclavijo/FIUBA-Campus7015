@@ -269,4 +269,74 @@ de coordenadas sobre el elipsoide
 :::
 :::
 
+::: {.tema}
+\#7: Consultas sobre TP1 (elipses de tissot), Marcos de Referencia  3-oct-2023
+:::
+
+::: {.collapsible}
+::: {.tema-cuerpo}
+
+## Dudas sobre elipses de tissot
+
+En clase hablamos de los problemas que algunos tuvieron con el TP1 para construir
+las elipses de Tissot.
+
+Planteamos el ejemplo en genérico, con un vector que tiene un módulo definido
+y un azimut que depende de un parámetro. Conocido el azimut de la máxima y mínima
+deformación se planteó que la escala sobre este vector permite determinar los ejes
+de la elipse.
+
+Recomendamos revisar el apunte de Vectores Base, que tiene una sección entera a
+el cálculo de las deformaciones en la dirección de máxima y mínima deformación.
+
+Un segundo enfoque, que no tratamos mucho en clase, es el de la descomposición
+de la matriz métrica, donde las escalas en las direcciones de máxima y mínima
+deformación quedan directamente expresadas por los elementos de la matriz diagonal
+generada. Esto está explicado tanto en el apunte de Vectores Base como en el de
+matriz métrica.
+
+En cuanto a la dificultad técnica, planteamos que para dibujar la elipse en CAD
+debemos usar el comando elipse igual que hacemos con la polilínea en Excel.
+
+Un planteo alternativo que se mencionó es el de dibujar en el espacio 3D un círculo
+y calcular su imágen transformada. Acá remarcamos que el círculo en cuestion tiene
+que dibujarse sobre el plano tangente y no en el plano $\varphi,\lambda$, porque
+en este caso no se está dbujando un circulo en metros sino una elipse.
+
+## Clase Marcos de Referencia.
+
+Luego vimos la clase teórica sobre marcos de referencia.
+
+Esta clase sigue bastante de cerca el apunte de marcos de referencia que está
+en la sección de material teórico y las grabaciones de clase correspondientes.
+
+La principal innovación de este cuatrimestre con respecto a ese material es el
+hincapié que hicimos en la primera parte con respecto a rol de la curvatura. Explicamos
+cómo se puede partir de demostrar que la tierra tiene una curvatura constante
+o aproximadamente constante, y a partir de ahí establecer convenciones para vincular
+distintos relevamientos e ir avanzando en el conocimiento geodésico.
+
+La explicación sobre la latitud, la longitud y el azimut astronómico fue un poco mas
+extensa que en el apunte, aunque fue similar a alguna de las clases grabadas en video.
+
+## Ejercicio práctico en el pizarron.
+
+Vimos como ejemplo de marco de referencia la superposición de curvas de nivel
+entre una carta topográfica de IGN en marco de referencia Campo Inchausepe y
+un modelo de terreno en WGS84.
+
+Este ejercicio lo hicimos sobre el pizarrón, aunque tuvimos algunos problemas
+con los imanes.
+
+## Tareas...
+
+Dado que siguen apareciendo dudas sobre temas que tratamos anteriormente, lo cual
+es lógico, les pedimos en esta semana que retomen la lectura de los apuntes
+de Vectores Base y de coordenadas sobre el elipsoide. A partir de esto podemos
+ir precisando cuales son los puntos que están más flojos y retomar la explicación
+por ese lado.
+
+:::
+:::
+
 :::
