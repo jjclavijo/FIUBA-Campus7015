@@ -1,10 +1,27 @@
+divert(-1)
+define(`LQ',`changequote(<,>)`dnl'
+changequote`'')
+define(`RQ',`changequote(<,>)dnl`
+'changequote`'')
+define(`xNUM',eval(`0'))dnl
+
+define(`xCOL',`define(`xNUM',eval(xNUM + 1))dnl
+
+LQ()LQ()LQ(){=html}
+<label for="mylist-node`'xNUM">Abrir/Colapsar</label>
+LQ()LQ()LQ()
+:::
+
+::: {.collapsible}
+LQ()LQ()LQ(){=html}
+<input type="checkbox" id="mylist-node`'xNUM">
+LQ()LQ()LQ()')
+divert(0)dnl
 ::: {#iresumenes}
 
 ::: {.tema}
 \#1: ¿Qué Son Coordenadas? 22-Ago-2023
-:::
-
-::: {.collapsible}
+xCOL
 ::: {.tema-cuerpo}
 
 En la primera clase partimos de la pregunta de qué son coordenadas.
@@ -51,9 +68,7 @@ En su momento, el material que me hizo pensar en dar esta clase de esta forma fu
 
 ::: {.tema}
 \#2, Propiedades Locales y derivadas. 29-agosto-2023
-:::
-
-::: {.collapsible}
+xCOL
 ::: {.tema-cuerpo}
 
 En la segunda clase tratamos de establecer algunos principios para poder analizar las propiedades de estas transformaciones locales que dijimos que quedan definidas cuando creamos un sistema de representación cartográfico.
@@ -82,9 +97,7 @@ El material para esta clase es el que aparece en la sección #2 de "material te�
 
 ::: {.tema}
 \#3 De propiedades locales a Globales - nota sobre SVD - Desarrollos de proyecciones más comunes. 5-Septiembre-2023
-:::
-
-::: {.collapsible}
+xCOL
 ::: {.tema-cuerpo}
 
 La clase tuvo cuatro secciones:
@@ -110,9 +123,7 @@ En la última sección empezamos haciendo un comentario sobre la SVD (que retoma
 
 ::: {.tema}
 \#4: Cartas, Modelos de Terreno y Coordenadas Pixel 12-Sep-2023
-:::
-
-::: {.collapsible}
+xCOL
 ::: {.tema-cuerpo}
 
 En esta clase, que dio Mariano Harguinteguy, vieron cómo se manifestaban los
@@ -132,9 +143,7 @@ El contenido de esta clase puede repasarse con estos ejercicios:
 
 ::: {.tema}
 \#5: Desarrollo de una proyección y algo de Curvatura 19-Sep-2023
-:::
-
-::: {.collapsible}
+xCOL
 ::: {.tema-cuerpo}
 
 Esta clase estuvo dividida en dos secciones, con un intervalo de repaso más
@@ -169,9 +178,7 @@ Temas importantes para repasar a esta altura:
 
 ::: {.tema}
 \#6: Curvatura, Dudas sobre desarrollos de proyecciones 26-Sep-2023
-:::
-
-::: {.collapsible}
+xCOL
 ::: {.tema-cuerpo}
 
 En la clase comenzamos por resolver dudas sobre el desarrollo del TP1 y desarrollo
@@ -268,137 +275,5 @@ de coordenadas sobre el elipsoide
 
 :::
 :::
-
-::: {.tema}
-\#7: Consultas sobre TP1 (elipses de tissot), Marcos de Referencia  3-oct-2023
-:::
-
-::: {.collapsible}
-::: {.tema-cuerpo}
-
-## Dudas sobre elipses de tissot
-
-En clase hablamos de los problemas que algunos tuvieron con el TP1 para construir
-las elipses de Tissot.
-
-Planteamos el ejemplo en genérico, con un vector que tiene un módulo definido
-y un azimut que depende de un parámetro. Conocido el azimut de la máxima y mínima
-deformación se planteó que la escala sobre este vector permite determinar los ejes
-de la elipse.
-
-Recomendamos revisar el apunte de Vectores Base, que tiene una sección entera a
-el cálculo de las deformaciones en la dirección de máxima y mínima deformación.
-
-Un segundo enfoque, que no tratamos mucho en clase, es el de la descomposición
-de la matriz métrica, donde las escalas en las direcciones de máxima y mínima
-deformación quedan directamente expresadas por los elementos de la matriz diagonal
-generada. Esto está explicado tanto en el apunte de Vectores Base como en el de
-matriz métrica.
-
-En cuanto a la dificultad técnica, planteamos que para dibujar la elipse en CAD
-debemos usar el comando elipse igual que hacemos con la polilínea en Excel.
-
-Un planteo alternativo que se mencionó es el de dibujar en el espacio 3D un círculo
-y calcular su imágen transformada. Acá remarcamos que el círculo en cuestion tiene
-que dibujarse sobre el plano tangente y no en el plano $\varphi,\lambda$, porque
-en este caso no se está dbujando un circulo en metros sino una elipse.
-
-## Clase Marcos de Referencia.
-
-Luego vimos la clase teórica sobre marcos de referencia.
-
-Esta clase sigue bastante de cerca el apunte de marcos de referencia que está
-en la sección de material teórico y las grabaciones de clase correspondientes.
-
-La principal innovación de este cuatrimestre con respecto a ese material es el
-hincapié que hicimos en la primera parte con respecto a rol de la curvatura. Explicamos
-cómo se puede partir de demostrar que la tierra tiene una curvatura constante
-o aproximadamente constante, y a partir de ahí establecer convenciones para vincular
-distintos relevamientos e ir avanzando en el conocimiento geodésico.
-
-La explicación sobre la latitud, la longitud y el azimut astronómico fue un poco mas
-extensa que en el apunte, aunque fue similar a alguna de las clases grabadas en video.
-
-## Ejercicio práctico en el pizarron.
-
-Vimos como ejemplo de marco de referencia la superposición de curvas de nivel
-entre una carta topográfica de IGN en marco de referencia Campo Inchausepe y
-un modelo de terreno en WGS84.
-
-Este ejercicio lo hicimos sobre el pizarrón, aunque tuvimos algunos problemas
-con los imanes.
-
-## Tareas...
-
-Dado que siguen apareciendo dudas sobre temas que tratamos anteriormente, lo cual
-es lógico, les pedimos en esta semana que retomen la lectura de los apuntes
-de Vectores Base y de coordenadas sobre el elipsoide. A partir de esto podemos
-ir precisando cuales son los puntos que están más flojos y retomar la explicación
-por ese lado.
-
-:::
-:::
-
-::: {.tema}
-\#8: Cartografía Temática (introducción), 10-oct-2023
-:::
-
-::: {.collapsible}
-::: {.tema-cuerpo}
-
-Comenzamos la clase con una revisión sobre el TP 2, pensando en interpretar el
-proceso completo del TP como una conversión de coordenadas entre dos planos tangentes
-locales, que involucra sucesivos cambios de origen y transformaciones lineales.
-
-Estas operaciones podrían verse también como linealizaciones (primer término del polinomio de taylor
-en tres dimensiones), de las distintas transformaciones no lineales que se aplican a las coordenadas.
-En esto incluimos tanto las proyecciones cartográficas como la conversión de coordenadas
-geodésicas a cartesianas.
-
-# Teoría sobre cartas temáticas.
-
-Comenzamos con una introducción general que trató aspectos de la cartografía temática
-desde distintos enfoques, pasando por la filosofía (semiología y epistemología), el
-arte (composición) y el diseño.
-
-:::
-:::
-
-::: {.tema}
-\#9: Ejercicios de desarrollo  17-oct-2023
-:::
-
-Resolvimos dos ejercicios de desarrollo matemático.
-
-## ¿Existe una proyección que punto a punto tenga igual escala en meridianos y paralelos pero no sea conforme?
-
-Este ejercicio lo resolvimos a partir de:
-1. Plantear primero cómo se expresaba matemáticamente este enunciado.
-2. Analizar cómo sería la métrica de una transformación de este tipo y verificar que un caso particular podría construirse a partir de aplicar una transformación lineal globalmente a una transformación conforme.
-3. Buscar qué sub-caso de transformación lineal nos permite cumplir con el enunciado.
-
-## Para una proyección azimutal equidistante o equivalente verificar si, al reemplazar la coordenada $\alpha=\lambda+\delta$ existen líneas estándar en la proyección.
-
-Comenzamos explicando el concepto de línea estándar, y llegamos a la conclusión de que,
-en una transformación continua la forma de probar la existencia de líneas estándar era
-verificar que en cada punto existe al menos una dirección con escala unitaria.
-
-Para probar esto trabajamos intentando probar que hay direcciones con escala mayor a uno y
-otras con escala menor a uno. Por consecuencia habrá una dirección con escala unitaria.
-
-# Tareas
-
-Dejamos como tareas, además de terminar los trabajos prácticos pendientes, y repasar
-los ejercicios que resolvimos en clase, encarar
-el trabajo con cartas temáticas pensando en lugar de hacer una carta temática completa
-en cómo usar los datos del Censo 2010 para ejemplificar brevemente los conceptos
-vistos en la teoría sobre Carta temática.
-
-::: {.collapsible}
-::: {.tema-cuerpo}
-
-:::
-:::
-
 
 :::

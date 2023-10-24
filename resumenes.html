@@ -1,0 +1,489 @@
+<div>
+    <script>
+        var sheet = document.createElement('style')
+        sheet.innerHTML = `
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@600&family=Oxygen:wght@300;400&display=swap');
+
+    #cronograma tr {
+      }
+
+    #iresumenes {
+      line-height: 1.7;
+      font-family: 'Oxygen', sans-serif;
+      font-size: 20px;
+      font-weight: 300;
+			color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    #iresumenes {
+      margin: 0 auto;
+      hyphens: auto;
+      word-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      #iresumenes {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+    }
+    @media print {
+      #iresumenes {
+        background-color: transparent;
+        color: black;
+      }
+      #iresumenes p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      #iresumenes h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    #iresumenes p {
+      margin-top: 1.7em;
+    }
+    #iresumenes a {
+      color: #1a1a1a;
+    }
+
+    #iresumenes a.recurso {
+      border: dashed 2px gray;
+    }
+
+    #iresumenes a.propio {
+      background: #74d347;
+    }
+
+    #iresumenes a.externo {
+      background: #d3a747;
+    }
+
+    #iresumenes a.video {
+      border: solid 2px #4774d3;
+    }
+
+    #iresumenes a {
+      color: #1a1a1a;
+    }
+
+    #iresumenes a:visited {
+      color: #1a1a1a;
+    }
+    #iresumenes img {
+      max-width: 100%;
+    }
+    #iresumenes h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.7em;
+      font-family: 'Montserrat Alternates', sans-serif;
+    }
+    #iresumenes ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1.7em;
+    }
+    #iresumenes li > ol, li > ul {
+      margin-top: 0;
+    }
+    #iresumenes blockquote {
+      margin: 1.7em 0 1.7em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      font-style: italic;
+    }
+    #iresumenes hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin-top: 1.7em;
+    }
+    #iresumenes table {
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+    }
+    #iresumenes th, td {
+      border-bottom: 1px solid lightgray;
+      padding: 0.4em 0.7em 0.4em 0;
+    }
+    #iresumenes header {
+      margin-bottom: 6em;
+      text-align: center;
+    }
+    #iresumenes nav a:not(:hover) {
+      text-decoration: none;
+    }
+    #iresumenes code{white-space: pre-wrap;}
+    #iresumenes span.smallcaps{font-variant: small-caps;}
+    #iresumenes span.underline{text-decoration: underline;}
+    #iresumenes div.column{display: inline-block; vertical-align: top; width: 50%;}
+    #iresumenes div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    #iresumenes ul.task-list{list-style: none;}
+    #iresumenes {
+    font-size: 1rem
+    }
+    #iresumenes .tema {
+    font-size: 1.7rem;
+    font-family: 'Montserrat Alternates', sans-serif;
+    border-top: dashed 1px;
+    border-bottom: solid 1px;
+    padding: 1em;
+    padding-bottom: 0.3em;
+    }
+    #iresumenes .tema p {
+    font-size: 1.7rem;
+    font-family: 'Montserrat Alternates', sans-serif;
+    padding: 0em;
+    margin: 0em;
+    }
+    div.collapsible > input + * {
+     display: none;
+    }
+     
+    div.collapsible > input:checked + * {
+     display: block;
+    }
+
+    div.collapsible > input {
+     display: none;
+    }
+
+    .tema label {
+     cursor: pointer;
+     font-size: 1rem;
+     background: #dddddd;
+    }
+
+`;
+        document.body.appendChild(sheet);
+    </script>
+<div id="iresumenes">
+<div class="tema">
+<p>#1: ¿Qué Son Coordenadas? 22-Ago-2023</p>
+<label for="mylist-node1">Abrir/Colapsar</label>
+</div>
+<div class="collapsible">
+<input type="checkbox" id="mylist-node1">
+<div class="tema-cuerpo">
+<p>En la primera clase partimos de la pregunta de qué son
+coordenadas.</p>
+<p>El desarrollo de la clase incluyó hablar de las coordenadas como
+conjuntos ordenados de elementos que sirven para etiquetar o nombrar
+elementos que integran un conjunto.</p>
+<p>Elefantes o mariposas</p>
+<p>En principio dijimos que los “casilleros” de las coordenadas podían
+llenarse con cualquier cosa, pero quedamos en que en general para los
+casos prácticos íbamos a usar números reales o en todo caso enteros.</p>
+<p>Luego dijimos que el conjunto cuyos elementos nombramos podía tener
+algunas propiedades interesantes (y que no dependen del sistema de
+coordenadas). Por ejemplo, podría tener alguna noción de vecindad que
+nos permitiera medir dentro de ese conjunto.</p>
+<p>Aquí aparecieron dos tipos de conjuntos que eran especiales para
+nosotros: - Uno que admite definir una distancia usando productos
+internos, de modo que admite coordenadas cartesianas (y estas
+coordenadas nos pueden servir para calcular la distancia entre
+elementos). Por ejemplo: R3 - Otros admiten una noción de distancia
+local (hay vecindad pero no hay distancia euclídea), que nos permite
+medir usando productos internos sobre porciones infinitecimales (espacio
+tangente) y para calcular distancias debemos integrar sobre estas
+magnitudes.</p>
+<p>Dicho esto hablamos de las curvas que se generan cuando las
+coordenadas respetan noción de vecindad, y de cómo las derivadas
+paramétricas de estas coordenadas nos definen vectores tangentes a las
+curvas.</p>
+<p>Cerramos esaa sección hablando de cómo la noción de escala puede
+definirse pensando en las magnitudes de estos vectores tangentes.</p>
+<p>En una segunda sección de la clase hablamos de por qué la superficie
+de la esfera no se puede representar sin deformación sobre el plano,
+mencionando al “teorema egregium” de Gauss y al concepto de curvatura.
+Hablamos de la imposibilidad de construir un isomorfismo global en este
+caso, y la necesidad de restringirnos a isomorfismos locales. Luego,
+quedó planteada la necesidad de analizar las propiedades de esos
+isomorfismos locales.</p>
+<p>Terminamos planteando que un mismo conjunto de coordenadas puede
+etiquetar elementos de dos espacios distintos, generando curvas
+coordenadas distintas en cada uno, y de esta manera usarse para
+representar elementos de un conjunto sobre otro. Es este el principio
+básico de los sistemas de representación cartográficos.</p>
+<p>Como ejercicios prácticos en esta clase trabajamos con:</p>
+<ol type="1">
+<li><p>una planilla excel donde se podía evaluar el efecto de aplicar
+una transformación a un sistema de coordenadas. Vimos cómo localmente
+todas las transformaciones pueden considerarse lineales (un cuadrado
+suficientemente chico siempre se transforma en un paralelogramo), y que
+podíamos calcular algunas propiedades de la transformación buscando sus
+derivadas en forma numérica.</p></li>
+<li><p>mostré un ejemplo en un notebook de python, donde se planteaba
+una transformación de un sistema de coordenadas, y se evaluaba en qué
+dominio y co-dominio la transformación era bi-unívoca.</p></li>
+<li><p>mostramos un ejemplo usando Qgis para graficar el concepto de
+distancia, donde muestrebamos puntos aleatorios en el espacio de
+latitud-longitud, y luego evaluavamos cómo se agrupaban sobre la
+superficie de la tierra (midiendo cuántos vecinos tenía cada punto en un
+radio de distancia fija).</p></li>
+</ol>
+<p>Si bien esta clase es introductoria, como material de apoyo puede
+usarse lo que está en la sección #1 de la pestaña “material teórico” del
+campus. (aunque está mas enfocado en las parametrizaciones que en el
+concepto de coordenada)</p>
+<p>También cualquier material que hable sobre el espacio tangente a una
+superficie parametrizada engloba un poco lo que vimos en esta clase.
+(porque van a aparecer los conceptos de coordenadas, parametrización,
+espacio tangente, etc). Me resultaron en este caso muy interesantes
+algunos videos sobre formas diferenciales, como este:</p>
+<ul>
+<li>https://www.youtube.com/watch?v=PaWj0WxUxGg&amp;list=PL22w63XsKjqzQZtDZO_9s2HEMRJnaOTX7</li>
+</ul>
+<p>En su momento, el material que me hizo pensar en dar esta clase de
+esta forma fue el libro “Vector Calculus, Linear Algebra, and
+Differential Forms: A Unified Approach” de Hubbrad.</p>
+</div>
+</div>
+<div class="tema">
+<p>#2, Propiedades Locales y derivadas. 29-agosto-2023</p>
+<label for="mylist-node2">Abrir/Colapsar</label>
+</div>
+<div class="collapsible">
+<input type="checkbox" id="mylist-node2">
+<div class="tema-cuerpo">
+<p>En la segunda clase tratamos de establecer algunos principios para
+poder analizar las propiedades de estas transformaciones locales que
+dijimos que quedan definidas cuando creamos un sistema de representación
+cartográfico.</p>
+<p>La clase se dividió en tres secciones: un ejercicio inicial, una
+sección teórica y un ejercicio final.</p>
+<p>El ejercicio inicial consistió en usar Inkscape para tomar una carta
+y un gráfico vectorial de calles de la misma zona, y deformar el gráfico
+de calles hasta conseguir la coincidencia. Como</p>
+<p>Comenzamos planteando una definicion de la derivada que no es la que
+usualmente vemos en análisis: la derivada de Frechet. ( Este video es un
+poco muy matemático, pero si se lo mira con atención y siguiendo el
+desarrollo en un cuaderno aparte, el concepto está muy claro:
+https://www.youtube.com/watch?v=52AtbAkQ6MU )</p>
+<p>Esta derivada queda definida como la transformación lineal que mejor
+aproxima a la función en un punto.</p>
+<p>Luego, observamos que al definir la derivada de esta forma, vemos que
+la regla de la cadena queda fácilmente definida para una sucesión de
+transformaciónes en varias variables.</p>
+<h2 id="ciempies">Ciempies</h2>
+<p>A partir de esto construimos una notación para nombrar los vectores
+que un sistema de coordenadas genera, y cómo se pueden calcular los
+vectores de un sistema como transformación de otros, usando la regla de
+la cadena. Ahi termnamos poniendo el ejemplo del ciempies que recorre
+dos espacios usando las mismas coordenadas, y la relacion entre
+velocidades cuando recorre una misma cordenada en dos espacios termina
+siendo lo que define la escala.</p>
+<p>El ejercicio final de la clase fue el planteo de la proyección de
+mercator a partir de una sumatoria para lograr calcular la proyección
+usando la definición de la integral.</p>
+<p>El material para esta clase es el que aparece en la sección #2 de
+“material teórico” en el campus.</p>
+</div>
+</div>
+<div class="tema">
+<p>#3 De propiedades locales a Globales - nota sobre SVD - Desarrollos
+de proyecciones más comunes. 5-Septiembre-2023</p>
+<label for="mylist-node3">Abrir/Colapsar</label>
+</div>
+<div class="collapsible">
+<input type="checkbox" id="mylist-node3">
+<div class="tema-cuerpo">
+<p>La clase tuvo cuatro secciones:</p>
+<p>En la primera repasamos en general lo que habíamos visto hasta la
+fecha.</p>
+<h2 id="apilar-trapecios">Apilar trapecios</h2>
+<p>En una segunda parte resolvimos el ejercicio de “mercator por
+definición”, dibujamos en el pizarrón el “apilado” de los trapecios que
+se forman con la partición, cómo se escalan para ocupar el espacio, etc.
+( <a
+href="https://gist.github.com/jjclavijo/1397f44c00340d2f4db1052baa0e4c5d">El
+ejemplo en un notebook para experimentar en colab lo pueden ver acá:</a>
+)</p>
+<p>Quedó planteado como posible ejercicio hacer lo mismo pero partiendo
+el espacio diréctamente a partir de las coordenadas cartesianas de R3 y
+no de las coordenadas esféricas.</p>
+<p>En la tercera sección vimos cómo las propiedades locales pueden
+traducirse en fórmulas de una proyección sin necesidad de discretizar el
+espacio sino planteando condiciones sobre los vectores base de las
+coordenadas que se usan en la transformación. (la parte de los vectores
+base y sus transformaciones corresponde al material de la sección #2 de
+“material teórico” del campus).</p>
+<h2 id="circulos-son-elipses">Circulos son elipses</h2>
+<p>En esta sección también hicimos un pequeño paréntesis sobre cómo un
+circulo de un espacio se termina traduciendo a una elipse en otro. Esto
+incluyó el concepto de direcciones fundamentales, que está presente
+tanto en la sección #2 como en la #3 del material teórico.</p>
+<p>En la última sección empezamos haciendo un comentario sobre la SVD
+(que retomaremos más adelante cuando hablemos de la matriz métrica, pero
+pueden ir mirando en la sección #4 de “material teórico” del campus), y
+luego hicimos una revisión rápida del desarrollo de las proyecciones
+acimutales, cilíndricas y cónicas con condiciones de conformidad,
+equivalencia o equidistancia. Esto ultimo corresponde a la sección #3
+del “material teórico” en el campus.</p>
+</div>
+</div>
+<div class="tema">
+<p>#4: Cartas, Modelos de Terreno y Coordenadas Pixel 12-Sep-2023</p>
+<label for="mylist-node4">Abrir/Colapsar</label>
+</div>
+<div class="collapsible">
+<input type="checkbox" id="mylist-node4">
+<div class="tema-cuerpo">
+<p>En esta clase, que dio Mariano Harguinteguy, vieron cómo se
+manifestaban los distintos sistemas de coordendas en una carta
+topográfica y en un modelo digital del terreno.</p>
+<p>Esto incluyó tanto coordenadas geográficas como coordenadas
+pixel.</p>
+<p>El contenido de esta clase puede repasarse con estos ejercicios:</p>
+<ul>
+<li><a
+href="https://campusgrado.fi.uba.ar/mod/resource/view.php?id=117522">Enunciados
+de ejemplo</a></li>
+<li><a
+href="https://campusgrado.fi.uba.ar/mod/folder/view.php?id=117521">Archivos
+auxiliares</a></li>
+</ul>
+</div>
+</div>
+<div class="tema">
+<p>#5: Desarrollo de una proyección y algo de Curvatura 19-Sep-2023</p>
+<label for="mylist-node5">Abrir/Colapsar</label>
+</div>
+<div class="collapsible">
+<input type="checkbox" id="mylist-node5">
+<div class="tema-cuerpo">
+<p>Esta clase estuvo dividida en dos secciones, con un intervalo de
+repaso más descontracturado.</p>
+<p>En el primer bloque resolvimos la proyección cónica normal tangente
+equivalente, partiendo de sus condiciones.</p>
+<p>En el segundo bloque hablamos un poco de las diferencias en cuanto a
+curvatura que tienen el círculo y la elipse, y de cómo la definición de
+curvatura está atada a un sistema de coordenadas tangente a la
+curva.</p>
+<p>También hablamos de cómo hay algunas parametrizaciones convenientes a
+la hora de calcular el largo de un arco de círculo o de elipse, y de por
+qué el hecho de que pi sea un numero trascendente “esconde” la dificulad
+para resolver la integral por la que se calcula el árco de un
+círculo.</p>
+<p>Recomiendo al respecto estos dos videos:</p>
+<ul>
+<li>https://youtu.be/5nW3nJhBHL0?si=yKXpSyURUR_gQ4qt</li>
+<li>https://youtu.be/9EJqxZqf63I?si=Be-uKTxE8iPRkQf6</li>
+</ul>
+<p>Del segundo pueden buscar el original en inglés si les cae mal (como
+a mi) el doblaje.</p>
+<p>Temas importantes para repasar a esta altura:</p>
+<ol type="1">
+<li>Calcular vectores base de esfericas y polares. <strong>Todos los
+días. </strong></li>
+<li>Para poder avanzar la clase que viene: ¿por que la norma de fi es R
+en el circulo? Y ¿por qué si defino fi con la normal a la curva la norma
+tambien es el radio de curvatura aunque no sea constante?</li>
+</ol>
+</div>
+</div>
+<div class="tema">
+<p>#6: Curvatura, Dudas sobre desarrollos de proyecciones
+26-Sep-2023</p>
+<label for="mylist-node6">Abrir/Colapsar</label>
+</div>
+<div class="collapsible">
+<input type="checkbox" id="mylist-node6">
+<div class="tema-cuerpo">
+<p>En la clase comenzamos por resolver dudas sobre el desarrollo del TP1
+y desarrollo de proyecciones en general.</p>
+<p>Hablamos de:</p>
+<ol type="1">
+<li>Proyección Conforme Cilíndrica Secante Normal: Vimos que es igual a
+Mercator pero con un factor de escala aplicado. Resolvimos, con
+identidades trigonométricas, cómo podía hacerse para igualar dos
+expresiones para la misma proyección:
+<ul>
+<li>Comentario: En sympy se puede verificar si dos expresiones son la
+misma restándolas e igualándolas a 0. <a
+href="https://gist.github.com/jjclavijo/58814311e778548a4c4d92c93a15beb0">Aquí
+un ejemplo de eso que pueden correr en colab</a></li>
+</ul></li>
+<li>Proyección transversa de Mercator. Cómo se crea un sistema de
+coordenadas intermedias que corresponde a una grilla de paralelos y
+meridianos rotados.</li>
+</ol>
+<h1 id="curvatura">Curvatura</h1>
+<p>Luego hablamos sobre curvatura.</p>
+<p>Primero recordamos la definición de la curvatura como relación de
+velocidades entre el ángulo de la tangente a una curva y el avance por
+el largo de dicha curva.</p>
+<p>Luego hicimos “en paralelo” dos distintos desarrollos relativos al
+concepto de curvatura.</p>
+<h1 id="arco-de-elipse">Arco de elipse</h1>
+<p>Por un lado hablamos de cómo calcular un arco de elipse si utilizamos
+la parametrización (y; x(y)), y cómo esto para el caso del círculo es lo
+mismo que el arcoseno. Además hablamos de la parametrización utilizando
+la normal a la curva (la latitud), y de cómo en el círculo nos es útil
+porque la torsión es constante y sabemos cómo elegir los límites de este
+tipo de integrales porque conocemos el valor de PI.</p>
+<p>Partiendo de esto planteamos como ejemplo calcular el valor de PI a
+partir del arco-seno.</p>
+<p>Hablamos de cómo el tipo de integrales que surgen pueden resolverse
+con desarrollos en serie.</p>
+<h1 id="curvatura-de-una-superficie.">Curvatura de una superficie.</h1>
+<p>Por otro lado hablamos de cómo la curvatura en una superficie puede
+construirse en forma análoga a como construimos la torsión de una curva
+buscando el segundo término de la serie de taylor para la curva cuando
+trabajamos en el sistema de coordenadas del espacio tangente.</p>
+<p>En el caso de una superficie lo que obtenemos es un paraboloide (una
+forma cuadrática) que podemos decir que surge de transformar linealmente
+un paraboloide de rotación. En este sentido, la curvatura de la
+superficie queda descripta por una matriz que representa esa
+transformación que hablábamos. Esta mariz es la matriz hessiana cuando
+estamos en el sistema de coordenadas adecuado.</p>
+<p>Y aquí conectamos dos temas.</p>
+<h2 id="teorema-egregium">Teorema egregium</h2>
+<p>Por un lado, el teorema egregium de gauss que dice que no puede
+hallarse un isomorfismo entre superficies con distintas curvaturas usa
+el termino curvatura para referirse al determinante de esta
+transformación lineal.</p>
+<h2 id="curvaturas-máxima-y-mínima.">Curvaturas máxima y mínima.</h2>
+<p>El hecho de que la curvatura quede descripta por esta transformación
+lineal nos hace pensar que habrá una curvatura máxima y otra mínima
+ortogonales entre sí, igual que pasaba con las direcciones fundamentales
+de una transformación.</p>
+<p>Vimos que esto es cierto, hablamos de que en el elipsoide
+forzosamente estas direcciones son la de los meridianos y una
+perpendicular a ella, y pusimos nombre a los radios de curvatura
+(torsión) de estas curvas planas, M y N.</p>
+<p>Hablamos de cómo M tiene forzosamente que ser el módulo de phi en el
+elispoide, por cómo se define la parametrización.</p>
+<h2 id="ejemplo-práctico-1-geogebra">Ejemplo práctico 1: Geogebra</h2>
+<p>Vimos unos ejemplos construidos por Tomás en Geogebra para ilustrar
+los radios de curvatura sobre una elipse (y sobre el elipsoide).</p>
+<ul>
+<li><a href="https://www.geogebra.org/calculator/z2jkgyjz">Primer
+ejemplo</a></li>
+<li><a href="https://www.geogebra.org/calculator/vthaxgtm">Segundo
+ejemplo</a></li>
+</ul>
+<h2 id="ejemplo-práctico-2-calcular-pi.">Ejemplo práctico 2: Calcular
+pi.</h2>
+<p>Como ejemplo práctico intentamos que ChatGPT nos ayudara con código
+(en sympy o en máxima) a calcular el perímetro de la elipse o el valor
+de pi a partír de la definición del arcoseno como una integral.</p>
+<ul>
+<li>Log de una sesión de ejemplo hasta lograr que ChatGPT de un código
+valido y calcular pi. <a
+href="https://campusgrado.fi.uba.ar/mod/resource/view.php?id=117514">Link</a></li>
+</ul>
+<h1 id="tarea-para-la-clase-siguiente">Tarea para la clase
+siguiente</h1>
+<p>Revisar el desarrollo de cálculo de M y arco de meridiano tal como
+está en el apunto de coordenadas sobre el elipsoide</p>
+</div>
+</div>
+</div>
+
+
+
+
+</div>
+
