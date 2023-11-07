@@ -368,6 +368,9 @@ arte (composición) y el diseño.
 \#9: Ejercicios de desarrollo  17-oct-2023
 :::
 
+::: {.collapsible}
+::: {.tema-cuerpo}
+
 Resolvimos dos ejercicios de desarrollo matemático.
 
 ## ¿Existe una proyección que punto a punto tenga igual escala en meridianos y paralelos pero no sea conforme?
@@ -394,11 +397,98 @@ el trabajo con cartas temáticas pensando en lugar de hacer una carta temática 
 en cómo usar los datos del Censo 2010 para ejemplificar brevemente los conceptos
 vistos en la teoría sobre Carta temática.
 
+:::
+:::
+
+
+::: {.tema}
+\#10: Cartografía Temática (Continuación), Color  24-oct-2023
+:::
+
 ::: {.collapsible}
 ::: {.tema-cuerpo}
 
+## Cartografía temática.
+
+En esta clase retomamos los conceptos de la clase anterior de temática, pero
+nos centramos estrictamente en los aspectos de cartografía.
+
+Hablamos sobre las formas de ver la cartografía de distintos autores, como
+Robinson, Eckert, Bertin,...
+
+Explicamos los conceptos principales de la semiología gráfica de Bertin, pero
+también mostramos contraejemplos de las limitaciones que esta forma de interpretar
+la cartografía tiene.
+
+Hablamos también de las críticas a la forma de ver la cartografía que tiene Bertin,
+por ejemplo mencionamos el trabajo "Deconstructing the map" de Harley.
+
+Otros conceptos que se trataron fue el de visualización cartográfica, como producto
+orientado a la exploración de datos en lugar de a la publicación. En este tipo
+de aspectos recomiendo el libro de Paradigmas en cartografía, de Pablo Azócar.
+Al menos darle una hojeada.
+
+## Color.
+
+Usado un poco como ejemplo, siguiendo como guía la consigna de "por qué una combinación de
+bandas LANDSAT no es un mapa temático", hablamos sobre teoría de percepción del color.
+
+Empezamos hablando sobre la posibilidad de que no todas las personas llamen igual
+a los mismos colores, y partiendo de cómo el color se puede asignar a un espacio
+tridimensional. Luego mencionamos cuales son las características de esa distribución
+y por qué es importante tenerlo en cuenta a la hora de hacer un mapa.
+
+Hablamos de distancias entre colores y cómo ciertos colores pueden generar
+percepciones de objetos que en realidad no son parte de los datos.
+
+Este video fue un disparador que tuve para esta parte de la clase: https://youtu.be/4GJ4UQZvCNM?si=JUw9ttsZno8xAZDr
 :::
 :::
+
+::: {.tema}
+\#11: Cosas no relacionadas, Ejercicios  31-oct-2023
+:::
+
+::: {.collapsible}
+::: {.tema-cuerpo}
+
+Comenzamos la clase con un repaso de marco de referencia que fue un poco más allá de
+lo que correspondía a la materia. Pasada esa parte planteamos ejercicios de la guía.
+
+## Ejercicio de Conformidad (32)
+
+Comenzamos con el ejercicio 32, que plantea una proyección y pide evaluar si
+es conforme.
+
+El planteo del ejercicio sugiere que es útil considerar las fórmulas de mercator,
+y de hecho si se reemplaza la formula dentro de la otra, veremos que la proyección
+del enunciado es una transformación de la de mercator.
+
+Aquí se separaban dos caminos y algunas consideraciones. Si se lograba mostrar (completando cuadrados)
+que la proyección era una única función de variable compleja, ya estabamos garantizando la conformidad,
+porque las funciones de variable compleja son conformes de C a C.
+
+La otra opción era mostrar que la transformación desde mercator era conforme, o
+bien usando un par de vectores ortogonales de prueba, o bien mostrando que cumplía
+las condiciones de Cauchy-Riemman.
+
+Las funciones signo no resultan en demasiado problema mas allá de que parten a la
+proyección en sectores, pero pueden evaluarse los casos por separado.
+
+## Ejercicio de cónica proyectiva (30)
+
+Resolvimos este ejercicio como ejemplo donde se deben hacer consideraciones
+geométricas en R3 para resolver lo que pasa en R2.
+
+Los planteos pedidos se resuelven en general planteando un corte que contenga al meridiano que se
+ve recto en la proyección. Luego es cuestión de operar con trigonometría (aunque
+eso trajo algunos problemas, en el fondo es mecánico).
+
+
+
+:::
+:::
+
 
 
 :::
