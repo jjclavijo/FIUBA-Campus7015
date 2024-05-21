@@ -485,7 +485,6 @@ ve recto en la proyección. Luego es cuestión de operar con trigonometría (aun
 eso trajo algunos problemas, en el fondo es mecánico).
 
 
-
 :::
 :::
 
